@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="14px" viewBox="0 0 11 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="New-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="econsult-login/sign-up" transform="translate(-476.000000, -278.000000)" fill="#FFFFFF">
+            <g id="chat" transform="translate(435.000000, 278.000000)">
+                <g id="chat-1" transform="translate(41.000000, 0.000000)">
+                    <path d="M10.8257794,0 L1,0 L1,-6.66133815e-16 C0.44771525,-5.64680752e-16 0,0.44771525 0,1 C0,1.23871127 0.085392161,1.46954826 0.240743398,1.65079137 L10.8257794,14 L10.8257794,0 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

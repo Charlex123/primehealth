@@ -1,0 +1,81 @@
+.affordable,
+            .apple_store,
+            .down_arrow,
+            .google_play,
+            .payment,
+            .reliable,
+            .right_arrow,
+            .secure,
+            .up_arrow {
+                background: url(../../res.cloudinary.com/du8msdgbj/image/sprite/v1555479675/footer_desktop_v2_1x.png) no-repeat;
+            }
+            .affordable {
+                background: url(https://res.cloudinary.com/du8msdgbj/image/upload/v1571131870/affordable-rebrand_ivgidq.svg) no-repeat;
+                width: 98px;
+                height: 98px;
+            }
+            .apple_store {
+                background-position: 0 -100px;
+                width: 136px;
+                height: 47px;
+            }
+            .down_arrow {
+                background-position: 0 -149px;
+                width: 14px;
+                height: 10px;
+            }
+            .facebook {
+                background: url(https://res.cloudinary.com/du8msdgbj/image/upload/v1571132241/facebook-rebrand_ocvkak.svg) no-repeat;
+                width: 27px;
+                height: 26px;
+            }
+            .google_play {
+                background-position: 0 -189px;
+                width: 136px;
+                height: 41px;
+            }
+            .linkedin {
+                background: url(https://res.cloudinary.com/du8msdgbj/image/upload/v1571132397/linkedin-rebrand_tbeedv.svg) no-repeat;
+                width: 27px;
+                height: 26px;
+            }
+            .payment {
+                background-position: 0 -260px;
+                width: 153px;
+                height: 47px;
+            }
+            .reliable {
+                background: url(https://res.cloudinary.com/du8msdgbj/image/upload/v1571132631/secure-rebrand_x6f8yq.svg) no-repeat;
+                width: 98px;
+                height: 98px;
+            }
+            .right_arrow {
+                background-position: 0 -409px;
+                width: 19px;
+                height: 19px;
+            }
+            .secure {
+                background: url(https://res.cloudinary.com/du8msdgbj/image/upload/v1571132500/reliable-rebrand_rcpof3.svg) no-repeat;
+                width: 98px;
+                height: 98px;
+            }
+            .twitter {
+                background: url(https://res.cloudinary.com/du8msdgbj/image/upload/v1571132854/twitter-rebrand_qiai2s.svg) no-repeat;
+                width: 27px;
+                height: 26px;
+            }
+            .up_arrow {
+                background-position: 0 -558px;
+                width: 14px;
+                height: 10px;
+            }
+            .youtube {
+                background: url(https://res.cloudinary.com/du8msdgbj/image/upload/v1571737406/youtube_gkbh1t.svg) no-repeat;
+                width: 26px;
+                height: 26px;
+            }
+            .medium {
+                background: url(https://res.cloudinary.com/du8msdgbj/image/upload/v1601285810/marketing/jf3bry3wl6zzkd14yces.svg) no-repeat;
+                width: 26px;
+                height: 26px;
+            }

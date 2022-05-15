@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<!-- <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="theme-color" content="#FFF3E3" /> -->
+<!-- Windows Phone -->
+<!-- <meta name="msapplication-navbutton-color" content="#FFF3E3" /> -->
+<!-- iOS Safari -->
+<!-- <meta name="apple-mobile-web-app-status-bar-style" content="#FFF3E3" />
+<meta name="apple-mobile-web-app-capable" content="yes" /> -->
+<html>
+    <head prefix="og: http://ogp.me/ns# nodejsexpressdemo: http://ogp.me/ns/apps/nodejsexpressdemo#">
+        <!--Newrelic Header-->
+        <!-- Application styles-->
+        <link href="../faviconRebrand.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="msvalidate.01" content="099F7701BE7D0B79C7C51734FDC2A2D9" />
+        <link rel="manifest" href="../notifyvisitors_push/chrome/manifest.json" />
+        <!-- Apple Touch Icons-->
+        <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="../apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="../apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="../apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="../apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="../apple-touch-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon-180x180.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" href="../apple-touch-icon-precomposed.png" />
+        <link rel="preload" as="font" type="font/woff2" crossorigin href="https://static.1mg.com/css/fonts/clearsans-1.00/WOFF2/ClearSans-Regular.woff2" />
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="" href="css/socials.css"/>
+        <link rel="" href="css/subscriptions.css"/>
+        <link rel="preconnect" href="https://res.cloudinary.com/" crossorigin="anonymous" />
+        <link rel="dns-prefetch" href="https://res.cloudinary.com/" />
+        <link rel="preconnect" href="https://onemg.gumlet.io/" crossorigin="anonymous" />
+        <link rel="dns-prefetch" href="https://onemg.gumlet.io/" />
+        <link rel="preconnect" href="https://cdn.rudderlabs.com/" crossorigin="anonymous" />
+        <link rel="dns-prefetch" href="https://cdn.rudderlabs.com/" />
+        <link rel="preload" as="style" href="../../static.1mg.com/css/online_consultation/carePlanSellingPageServer_reactServerStyles.aca46c32b22239883e2e129a38cdd52d.css" />
+        <link rel="preload" as="script" href="../../static.1mg.com/js/carePlanSellingPage.bundle.454622099171da8cdcac62dc86c7a38f.js" />
+        <link rel="preload" as="image" href="../../onemg.gumlet.io/image/upload/q_auto%2cf_auto/v1579675864/marketing/gek7gtlcjca85q0l3ees.jpg" crossorigin="anonymous" importance="high" />
+        <link rel="preload" as="image" href="../../onemg.gumlet.io/image/upload/v1625657833/ekjkxafxcqqg0oinr3fu.png" crossorigin="anonymous" importance="high" />
+        <!-- styles-->
+        <style>
+
+        </style>
+        <style id="inject-async-stylesheets" type="text/css"></style>
+        <style type="text/css">
+            /* .flash-style {
+                visibility: hidden;
+            } */
+        </style>
+        <!-- Google Publisher Tag-->
+        <link rel="publisher" href="https://plus.google.com/+Healthkartplus" />
+        <!-- <script src="../../static.1mg.com/js/babel-polyfill.min.js"></script> -->
+        <meta http-equiv="content-language" content="en" />
+        <script>
+            // var dataLayer = [
+            //     {
+            //         page: "",
+            //         pType: "",
+            //         restricted: false,
+            //         isLoggedIn: false,
+            //         isPhoneNumberLinked: false,
+            //         city: "New Delhi",
+            //         citySlug: "new-delhi",
+            //         uname: "Guest",
+            //         affiliateDetails: "default",
+            //         visitorId: "ed977878-e502-47c5-c7fe-c308dc394532_acce55_1642260790",
+            //         isLabsReplica: false,
+            //         labsBasename: "/labs",
+            //         showExternalElements: false,
+            //         user_id: "",
+            //         source: null,
+            //     },
+            // ];
+            // var loadCss = function (cssPath) {
+            //     var cssLink = document.createElement("link");
+            //     cssLink.rel = "stylesheet";
+            //     cssLink.href = cssPath;
+            //     var head = document.getElementsByTagName("head")[0];
+            //     var injectionPoint = document.getElementById("inject-async-stylesheets");
+            //     // If referenceNode is null, the newNode is inserted at the end of the list of child nodes.
+            //     head.insertBefore(cssLink, injectionPoint);
+            // };
+        </script>
+        <title>Subscription Plan | Tata 1mg</title>
+        <script type="text/javascript">
+            // var rudderanalytics = (window.rudderanalytics = []);
+            // var methods = ["load", "page", "track", "identify", "reset", "ready"];
+            // for (var i = 0; i < methods.length; i++) {
+            //     var method = methods[i];
+            //     rudderanalytics[method] = (function (methodName) {
+            //         return function () {
+            //             rudderanalytics.push([methodName, ...arguments]);
+            //         };
+            //     })(method);
+            // }
+            // rudderanalytics.load("1Xw0r3h5UkJhTd7i4MyWYyjDQFZ", "https://rudderapi.1mg.com/");
+            // var dl = window.dataLayer && window.dataLayer[0] ? Object.assign({}, window.dataLayer[0]) : null;
+            // var device = navigator && navigator.userAgent && navigator.userAgent.indexOf("Mobile") > -1 ? "mobile" : "desktop";
+            // if (dl) {
+            //     var page = dl.page,
+            //         uname = dl.uname,
+            //         userId = dl.visitorId,
+            //         email = dl.email || "",
+            //         city = dl.city;
+            //     if (page && page.length > 0) {
+            //         page = dl.page.charAt(0).toUpperCase() + dl.page.slice(1);
+            //     }
+            //     dl.criteo = null;
+            //     rudderanalytics.identify(userId, { name: uname, email, city });
+            //     rudderanalytics.page(page, `${page} page visited.`, { datalayer: dl, device: device });
+            // }
+        </script>
+        <!-- <script defer src="../../cdn.rudderlabs.com/rudder-analytics.min.js"></script> -->
+        <link rel="stylesheet" href="../../static.1mg.com/css/online_consultation/carePlanSellingPageServer_reactServerStyles.aca46c32b22239883e2e129a38cdd52d.css" />
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no" />
+        <style>
+            html {
+                height: 100%;
+                font-size: 14px;
+            }
+            body {
+                font-family: "Roboto", "Clear Sans", "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                line-height: 1.42857143;
+                color: #333;
+                height: inherit;
+                background: #edf1f4;
+                margin: 0px;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                -o-user-select: none;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            @media screen and (max-width: 468px) {
+                html {
+                    font-size: 16px;
+                }
+            }
+            @media screen and (min-width: 469px) and (max-width: 768px) {
+                html {
+                    font-size: 15px;
+                }
+            }
+        </style>
+        <style>
+            a {
+                text-decoration: none;
+                color: #ff6f61;
+            }
+            .m10 {
+                margin: 10px;
+            }
+            .mt8 {
+                margin-top: 8px;
+            }
+            .mt10 {
+                margin-top: 10px;
+            }
+            .mb10 {
+                margin-bottom: 10px;
+            }
+            .ml10 {
+                margin-left: 10px;
+            }
+            .p8 {
+                padding: 8px;
+            }
+            .p10 {
+                padding: 10px;
+            }
+            .plr10 {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .pt10 {
+                padding-top: 10px;
+            }
+            .pb10 {
+                padding-bottom: 10px;
+            }
+            .pb50 {
+                padding-bottom: 50px;
+            }
+        </style>
+    </head>
+    <script>
+        // !(function (f, b, e, v, n, t, s) {
+        //     if (f.fbq) return;
+        //     n = f.fbq = function () {
+        //         n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        //     };
+        //     if (!f._fbq) f._fbq = n;
+        //     n.push = n;
+        //     n.loaded = !0;
+        //     n.version = "2.0";
+        //     n.queue = [];
+        //     t = b.createElement(e);
+        //     t.async = !0;
+        //     t.src = v;
+        //     s = b.getElementsByTagName(e)[0];
+        //     s.parentNode.insertBefore(t, s);
+        // })(window, document, "script", "../../connect.facebook.net/en_US/fbevents.js");
+        // fbq("init", "1533315340292439");
+        // fbq("track", "PageView");
+    </script>
+    <body class="flash-style">
+        <div id="layout-container">
+            <div id="content-container">
+                <div>
+                    <!--if (headerType === req.enums.headerTypeEnum.CHECKOUT.value.type)--><!--  include ../includes/headers/headerCheckout--><!--else-->
+                    <div class="main-content">
+                        <div style="max-width: 100%;" class="content">
+                            <button class="btn btn-secondary btn-back-to-top hide-imp"><i class="fa fa-angle-up"></i></button><input type="hidden" name="_csrf" id="_csrf" value="GkSURlA1-14dVle0HmHIH2jF7CIdCPgA7Arg" />
+                            <div id="container">
+                                <div data-reactroot="">
+                                    <header id="header">
+                                        <div id="update-city-modal--react"></div>
+                                        <div id="interstitial-view--react"></div>
+                                        <div id="mob-search--react"></div>
+                                        <div class="row hidden-xs styles__top-row___1GOEC">
+                                            <div class="col-sm-8 styles__top-right-col___2VrGG">
+                                                <div itemscope="" itemtype="http://schema.org/Organization" class="col-sm-3 col-md-2 company-logo default styles__company-logo___16bHp">
+                                                    <meta itemprop="name" content="1mg.com" />
+                                                    <a href="../index.html" class="styles__logo-link-new___2YHUJ styles__button-text___3JQsb" data-auto-logo="true">
+                                                        <img src="../images/tata_1mg_logo.svg" alt="1mg, best e pharmacy in India" title="1mg, India&#x27;s Largest Healthcare Platform" width="124" height="35" />
+                                                    </a>
+                                                </div>
+                                                <ul itemscope="" itemtype="https://www.schema.org/SiteNavigationElement" class="styles__list-navigation___3k1hk">
+                                                    <li itemprop="name" data-auto-navlinks="Pharmacy" class="">
+                                                        <a itemprop="url" href="../index.html" class="button-text web-left-nav" target="_blank" data-vars-event-label="Pharmacy"><div>Medicines</div></a>
+                                                    </li>
+                                                    <li itemprop="name" data-auto-navlinks="Labs" class="">
+                                                        <a
+                                                            itemprop="url"
+                                                            href="../labsa4cb.html?utm_source=1mg&amp;utm_medium=jewel&amp;utm_campaign=labsgrowth"
+                                                            class="button-text t-service-labs web-left-nav"
+                                                            target="_blank"
+                                                            data-vars-event-label="Labs"
+                                                        >
+                                                            <div>Lab Tests</div>
+                                                            <div class="styles__jewel___FTpA5"><div class="styles__jewel__overlay___1lvEH">SAFE</div></div>
+                                                        </a>
+                                                    </li>
+                                                    <li itemprop="name" data-auto-navlinks="Doctors" class="">
+                                                        <a itemprop="url" href="../online-doctor-consultation.html" class="button-text t-online-consultation web-left-nav" target="_blank" data-vars-event-label="Doctors">
+                                                            <div>Ask Doctor</div>
+                                                        </a>
+                                                    </li>
+                                                    <li itemprop="name" data-auto-navlinks="Covid" class="">
+                                                        <a itemprop="url" href="../coronavirus-covid19.html" class="button-text t-service-labs web-left-nav" target="_blank" data-vars-event-label="Covid"><div>COVID-19</div></a>
+                                                    </li>
+                                                    <li itemprop="name" data-auto-navlinks="Ayurveda" class="">
+                                                        <a itemprop="url" href="../ayurveda.html" class="button-text web-left-nav" target="_blank" data-vars-event-label="Ayurveda"><div>Ayurveda</div></a>
+                                                    </li>
+                                                    <li itemprop="name" data-auto-navlinks="My Care Plan Selling" class="styles__active-tab___Upih6">
+                                                        <a itemprop="url" href="subscriptions.html" class="button-text t-service-labs web-left-nav" target="_blank" data-vars-event-label="My Care Plan Selling"><div>Care Plan</div></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-4 pad0 lang-profile">
+                                                <div class="styles__profile-navigation___3SV-l">
+                                                    <div class="hidden-xs styles__user-info___1cXqm">
+                                                        <div class="styles__login-container___nk2No">
+                                                            <a class="styles__login-link___2PwqA" data-auto-login="true"><span>Login</span></a><span class="styles__seprator___1JeJP"> | </span>
+                                                            <a class="styles__login-link___2PwqA" data-auto-signup="true"><span>Sign Up</span></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hidden-xs styles__offers___3H4Fh">
+                                                        <a href="../offers.html" class="styles__offers-link___3UIpv"><span>Offers</span></a>
+                                                    </div>
+                                                    <div class="styles__cart-counter___2nq62">
+                                                        <div data-auto-cart-counter="true" class="CartCounter__cart-counter-list___1a7tL"><div class="CartCounter__cart-img___3xOz1 CartCounter__cart-black___RXZ58"></div></div>
+                                                    </div>
+                                                    <div class="hidden-xs styles__need-help___zkNiE">
+                                                        <a href="../help.html" class="t-need-help styles__need-help-link___jbEq-" data-auto-need-help="true"><span>Need Help?</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div></div>
+                                        </div>
+                                        <div class="row styles__bottom-row___1a89P styles__border-one___2wAfi">
+                                            <div class="col-sm-8 pad0 styles__location-search-div___XoEew">
+                                                <div class="col-sm-3 col-md-3 hidden-xs styles__location-container___1v8qv">
+                                                    <div class="styles__container___2U-Bk">
+                                                        <div class="styles__city-locator___2uYRv">
+                                                            <span class="styles__locator-fa___3WHNG"><i class="fa fa-map-marker"></i></span>
+                                                            <input placeholder="Enter your city" value="New Delhi" name="city" class="styles__city-input___6e65P" data-auto-location-select="dweb" id="location-selector" autocomplete="off" />
+                                                            <span class="styles__city-detect___1YbZL" data-auto-location-detect="true"><div class="header_locator_icon"></div></span>
+                                                            <div class="styles__location-dropdown___CVd5J">
+                                                                <div class="LocationDropDown__city-dropdown-container___jMbLr">
+                                                                    <div>
+                                                                        <ul>
+                                                                            <li class="LocationDropDown__city-header___3xno3">TOP CITIES</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="New Delhi">New Delhi</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Gurgaon">Gurgaon</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Pune">Pune</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Mumbai">Mumbai</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Bengaluru">Bengaluru</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Kolkata">Kolkata</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Hyderabad">Hyderabad</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Ahmedabad">Ahmedabad</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Chennai">Chennai</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Indore">Indore</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Lucknow">Lucknow</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Jaipur">Jaipur</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Chandigarh">Chandigarh</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Bhopal">Bhopal</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Noida">Noida</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Navi Mumbai">Navi Mumbai</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Surat">Surat</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Patna">Patna</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Ludhiana">Ludhiana</li>
+                                                                            <li class="LocationDropDown__city-item___XRtse" data-auto-city-select="Bhubaneshwar">Bhubaneshwar</li>
+                                                                        </ul>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-9 col-md-9 searchbar-container styles__search-bar___e1Afp">
+                                                    <div class="styles__search-bar___nwXaU">
+                                                        <form id="srchBarShwInfo-form" name="searchForm" class="styles__search-form___3JMjr">
+                                                            <input
+                                                                type="text"
+                                                                id="srchBarShwInfo"
+                                                                placeholder="Search for Medicines and Health Products"
+                                                                value=""
+                                                                autocomplete="off"
+                                                                name="name"
+                                                                data-auto-search-bar="true"
+                                                                class="styles__search-input___3I6VS"
+                                                            />
+                                                            <span><div class="header_search_icon"></div></span>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4 hidden-xs styles__right-bottom___w9hKT">
+                                                <div class="styles__container___11wxb">
+                                                    <div class="styles__quick-buy___33q_a">
+                                                        <div class="header_quick_buy"></div>
+                                                        <span class="styles__quick-buy-text___1wiL7">
+                                                            QUICK BUY!
+                                                            <!-- -->Flat 25% off on medicines*
+                                                        </span>
+                                                    </div>
+                                                    <div class="styles__upload-prescription___TymaI">
+                                                        <a class="t-prescription-order styles__link___2Wj-m" href="../order-with-prescription.html" data-auto-upload-prescription="true"><span>Upload</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <div class="style__main-container___2P0i5" style="padding-bottom: 0;">
+                                        <div class="style__benefit-herobanner___1y1jz">
+                                            <div class="style__banner-text-new___2SgaT style__padding-left-16___3qa02">
+                                                <div class=""><img width="133" height="33" src="../../onemg.gumlet.io/image/upload/v1625657833/ekjkxafxcqqg0oinr3fu.png" alt="Icon" crossorigin="anonymous" /></div>
+                                                <div class="style__banner-header___lpQg0">Reduce your medical expenses by HALF</div>
+                                                <div class="style__banner-subheader___mpKtP">Save for things that make you happy</div>
+                                                <a class="style__link-dweb___3C7YA"><div class="style__join-now-dweb___sHfBM">Explore plans</div></a>
+                                                <div class="style__plan-text___2Bx_l">Plans starting Rs 46/month</div>
+                                            </div>
+                                            <div class="style__overlay-heroimg___2vqD_">
+                                                <img
+                                                    width="400"
+                                                    height="267"
+                                                    class="style__hero-img___1ZSHP"
+                                                    src="../../onemg.gumlet.io/image/upload/q_auto%2cf_auto/v1579675864/marketing/gek7gtlcjca85q0l3ees.jpg"
+                                                    alt="Icon"
+                                                    importance="high"
+                                                    crossorigin="anonymous"
+                                                />
+                                                <div class="style__overlay-grey___2VKAP"></div>
+                                            </div>
+                                        </div>
+                                        <div class="style__benefit-wrapper___2soth style__f-clm___v_QL-">
+                                            <div>
+                                                <div class="style__benefit_card___1J_h0 style__bottom-border___2wk00">
+                                                    <div class="style__header___vVVl1 style__hOne___2079I">Benefits</div>
+                                                    <div class="style__list-wrapper___1YJW_ style__f-row___337rD">
+                                                        <div class="style__f-row___337rD">
+                                                            <div
+                                                                class="style__listing___2xQWp style__unset-padding___2N_g- style__width-50___sJ9e2 style__padding-left-3percent___xZpj_ style__margin-bottom-benefit___1Sq2r style__width-280___2QF6H"
+                                                            >
+                                                                <div class="style__benefit-list___1FEPT style__f-clm___v_QL-">
+                                                                    <div class="style__shrink-0___31v-d style__benefit-icon___1umEj"><div class=""></div></div>
+                                                                    <ul class="style__content-list___1E_dQ">
+                                                                        <li class="style__sub-heading___n0VjX style__unset-padding___2N_g- style__font-title___2Kg0m style__text-left___234ma style__title-padding___iAo24">
+                                                                            <span>Save extra 7% on every order</span>
+                                                                        </li>
+                                                                        <li class="style__des-text___3CYeE style__font-14___3i27-">
+                                                                            Guaranteed savings over & above promotional offers. Extra 2% off on all prescription medicines. Earn additional 5% 1mgCash on all orders
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="style__listing___2xQWp style__unset-padding___2N_g- style__width-50___sJ9e2 style__padding-left-3percent___xZpj_ style__margin-bottom-benefit___1Sq2r style__width-280___2QF6H"
+                                                            >
+                                                                <div class="style__benefit-list___1FEPT style__f-clm___v_QL-">
+                                                                    <div class="style__shrink-0___31v-d style__benefit-icon___1umEj"><div class=""></div></div>
+                                                                    <ul class="style__content-list___1E_dQ">
+                                                                        <li class="style__sub-heading___n0VjX style__unset-padding___2N_g- style__font-title___2Kg0m style__text-left___234ma style__title-padding___iAo24">
+                                                                            <span>Free Lab Test</span>
+                                                                        </li>
+                                                                        <li class="style__des-text___3CYeE style__font-14___3i27-">
+                                                                            <html>
+                                                                                Get a free CBC or HbA1C test or upgrade to any one of our premium tests
+                                                                                <script
+                                                                                    defer
+                                                                                    src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
+                                                                                    integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
+                                                                                    data-cf-beacon='{"rayId":"6ce029325c5bda66","token":"ba96d29cd48f4e1ca7562de6d5528a84","version":"2021.12.0","si":100}'
+                                                                                    crossorigin="anonymous"
+                                                                                ></script>
+
+                                                                                <!-- Mirrored from www.1mg.com/subscription-plan/subscriptions by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Jan 2022 15:45:03 GMT -->
+                                                                            </html>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="style__f-row___337rD">
+                                                            <div
+                                                                class="style__listing___2xQWp style__unset-padding___2N_g- style__width-50___sJ9e2 style__padding-left-3percent___xZpj_ style__margin-bottom-benefit___1Sq2r style__width-280___2QF6H"
+                                                            >
+                                                                <div class="style__benefit-list___1FEPT style__f-clm___v_QL-">
+                                                                    <div class="style__shrink-0___31v-d style__benefit-icon___1umEj"><div class=""></div></div>
+                                                                    <ul class="style__content-list___1E_dQ">
+                                                                        <li class="style__sub-heading___n0VjX style__unset-padding___2N_g- style__font-title___2Kg0m style__text-left___234ma style__title-padding___iAo24">
+                                                                            <span>No Shipping Charges</span>
+                                                                        </li>
+                                                                        <li class="style__des-text___3CYeE style__font-14___3i27-">
+                                                                            <html>
+                                                                                No shipping charges on orders above Rs.50
+                                                                                <br />
+                                                                                Unlimited Free shipping on orders above Rs.500
+                                                                                <br />
+                                                                                Free shipping on 20 orders below Rs.500
+                                                                            </html>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="style__listing___2xQWp style__unset-padding___2N_g- style__width-50___sJ9e2 style__padding-left-3percent___xZpj_ style__margin-bottom-benefit___1Sq2r style__width-280___2QF6H"
+                                                            >
+                                                                <div class="style__benefit-list___1FEPT style__f-clm___v_QL-">
+                                                                    <div class="style__shrink-0___31v-d style__benefit-icon___1umEj"><div class=""></div></div>
+                                                                    <ul class="style__content-list___1E_dQ">
+                                                                        <li class="style__sub-heading___n0VjX style__unset-padding___2N_g- style__font-title___2Kg0m style__text-left___234ma style__title-padding___iAo24">
+                                                                            <span>Free E-Consultation</span>
+                                                                        </li>
+                                                                        <li class="style__des-text___3CYeE style__font-14___3i27-">
+                                                                            Get a free E-consultation from experts around 32 different specialities including dieticians and nutritionist
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="style__f-row___337rD">
+                                                            <div
+                                                                class="style__listing___2xQWp style__unset-padding___2N_g- style__width-50___sJ9e2 style__padding-left-3percent___xZpj_ style__margin-bottom-benefit___1Sq2r style__width-280___2QF6H"
+                                                            >
+                                                                <div class="style__benefit-list___1FEPT style__f-clm___v_QL-">
+                                                                    <div class="style__shrink-0___31v-d style__benefit-icon___1umEj"><div class=""></div></div>
+                                                                    <ul class="style__content-list___1E_dQ">
+                                                                        <li class="style__sub-heading___n0VjX style__unset-padding___2N_g- style__font-title___2Kg0m style__text-left___234ma style__title-padding___iAo24">
+                                                                            <span>Introducing Rapid Delivery<span class="style__tag___2MzGY">NEW</span></span>
+                                                                        </li>
+                                                                        <li class="style__des-text___3CYeE style__font-14___3i27-">
+                                                                            <html>
+                                                                                Now delivering quicker than before. Members enjoy free or discounted same day and next day delivery in selected cities and expanding soon to all cities
+                                                                            </html>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="style__listing___2xQWp style__unset-padding___2N_g- style__width-50___sJ9e2 style__padding-left-3percent___xZpj_ style__margin-bottom-benefit___1Sq2r style__width-280___2QF6H"
+                                                            >
+                                                                <div class="style__benefit-list___1FEPT style__f-clm___v_QL-">
+                                                                    <div class="style__shrink-0___31v-d style__benefit-icon___1umEj"><div class=""></div></div>
+                                                                    <ul class="style__content-list___1E_dQ">
+                                                                        <li class="style__sub-heading___n0VjX style__unset-padding___2N_g- style__font-title___2Kg0m style__text-left___234ma style__title-padding___iAo24">
+                                                                            <span>Early Sale Access</span>
+                                                                        </li>
+                                                                        <li class="style__des-text___3CYeE style__font-14___3i27-">Be among the first ones to shop during our sale days. Get exclusive deals across all categories.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="style__benefit_card___1J_h0">
+                                                    <div class="style__header___vVVl1 style__hTwo___3mpU7">Additional Benefits</div>
+                                                    <div class="style__list-wrapper___1YJW_">
+                                                        <div class="style__listing___2xQWp">
+                                                            <div class="style__benefit-list___1FEPT">
+                                                                <div class="style__benefit-icon___1umEj"><div class=""></div></div>
+                                                                <ul class="style__content-list___1E_dQ">
+                                                                    <li class="style__sub-heading___n0VjX style__unset-padding___2N_g- style__font-title___2Kg0m">FREE Health Monitoring</li>
+                                                                    <li class="style__des-text___3CYeE style__font-14___3i27-">Digitally record &amp; analyze your weight and blood sugar readings over a period of time</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="style__listing___2xQWp">
+                                                            <div class="style__benefit-list___1FEPT">
+                                                                <div class="style__benefit-icon___1umEj"><div class=""></div></div>
+                                                                <ul class="style__content-list___1E_dQ">
+                                                                    <li class="style__sub-heading___n0VjX style__unset-padding___2N_g- style__font-title___2Kg0m">Priority Processing</li>
+                                                                    <li class="style__des-text___3CYeE style__font-14___3i27-">
+                                                                        Care Plan members enjoy priority processing of their orders. As our premium members, your orders are prioritise by pushing your prescriptions to the front of the line
+                                                                        for validation.
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="style__listing___2xQWp">
+                                                            <div class="style__benefit-list___1FEPT">
+                                                                <div class="style__benefit-icon___1umEj"><div class=""></div></div>
+                                                                <ul class="style__content-list___1E_dQ">
+                                                                    <li class="style__sub-heading___n0VjX style__unset-padding___2N_g- style__font-title___2Kg0m">Premium Customer Support</li>
+                                                                    <li class="style__des-text___3CYeE style__font-14___3i27-">
+                                                                        Members would be entitled to our dedicated customer support experts. We are committed to providing you with responsive assistance and resolution. Your queries are our
+                                                                        priority. Fastest support to our premium members.
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="pricing-plan-section" class="style__benefit_card1___2VNCE style__variant-color___21uz0">
+                                                <div class="style__list-wrapper1___UVkc2">
+                                                    <div class="style__variant-info-wrapper___1Og-Q style__f-clm___v_QL-">
+                                                        <div>
+                                                            <div class="style__variant-logo___1pc4n"><div class=""></div></div>
+                                                            <div class="style__variant-header___3-7XL">More discounts, faster delivery and extra care</div>
+                                                            <div class="style__variant-subheader___24Cmf">Join now and enjoy all the benefits</div>
+                                                        </div>
+                                                        <div class="style__variant-benefits___1veD6">
+                                                            <div>Membership includes</div>
+                                                            <div>
+                                                                <div></div>
+                                                                <div class="style__f-row___337rD">
+                                                                    <div class="style__tick___3vXXQ"><div class=""></div></div>
+                                                                    <div class="style__variant-benefit___3RFCy">1 Free lab test</div>
+                                                                </div>
+                                                                <div class="style__f-row___337rD">
+                                                                    <div class="style__tick___3vXXQ"><div class=""></div></div>
+                                                                    <div class="style__variant-benefit___3RFCy">1 Free E-consultation</div>
+                                                                </div>
+                                                                <div class="style__f-row___337rD">
+                                                                    <div class="style__tick___3vXXQ"><div class=""></div></div>
+                                                                    <div class="style__variant-benefit___3RFCy">All other benefits mentioned above</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="choose-plan-section" class="style__variants___7TVcd style__marginBoth-20___3mcCd">
+                                                        <div class="style__variant-text___3kxVX">Choose a plan that’s right for you</div>
+                                                        <div class="style__variant-width___cYZL0">
+                                                            <div class="style__f-row___337rD style__whiteBG___6S265 style__selectedVariant___A7qpI style__variant___3_3iz">
+                                                                <div class="style__checkbox___2ls3_">
+                                                                    <span class="">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                                            <path
+                                                                                fill="#FF6F61"
+                                                                                fill-rule="evenodd"
+                                                                                d="M12 7c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0-5C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+                                                                            ></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="style__f-clm___v_QL- style__flexGrow___243BD">
+                                                                    <div class="style__f-row___337rD">
+                                                                        <div>
+                                                                            <span class="style__variant-duration___3fOQy style__semiBold___1las8 style__f-row___337rD style__center-align___3rcj7">
+                                                                                <span>
+                                                                                    3<!-- -->
+                                                                                    months plan
+                                                                                </span>
+                                                                                <span class="style__tag___2MzGY">NEW</span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="style__variant-price___2SPYy">₹<!-- -->165</div>
+                                                                    <div class="style__variant-monthly-price___3lTlW style__information-secondary___25-w4 style__f-row___337rD style__valign-center___1-Isw"><span>₹55/month</span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="style__f-row___337rD style__whiteBG___6S265 style__notSelectedVariant___1nZi8 style__last-variant___drPJD">
+                                                                <div class="style__checkbox___2ls3_">
+                                                                    <span class="">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                                            <path
+                                                                                fill="#767676"
+                                                                                fill-rule="evenodd"
+                                                                                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+                                                                            ></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="style__f-clm___v_QL- style__flexGrow___243BD">
+                                                                    <div class="style__f-row___337rD">
+                                                                        <div>
+                                                                            <span class="style__variant-duration___3fOQy style__semiBold___1las8 style__f-row___337rD style__center-align___3rcj7">
+                                                                                <span>
+                                                                                    6<!-- -->
+                                                                                    months plan
+                                                                                </span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="style__variant-price___2SPYy">₹<!-- -->275</div>
+                                                                    <div class="style__variant-monthly-price___3lTlW style__information-secondary___25-w4 style__f-row___337rD style__valign-center___1-Isw">
+                                                                        <span>₹46/month</span><span class="style__semiBold___1las8 style__tag___2MzGY style__green-bgtag___2L0Is">Save 16%</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="styles__cta-wrapper___YNJZq">
+                                                                    <a href="../cart/payment-dcp/60754abd5c9d821af4f7d7a34d51.html?addons=true" target="_self">
+                                                                        <div class="style__container___3wimV style__primary___G71Z8 style__full-width___1mWBa style__round___3d7wi style__no-arrows___3eSSm">
+                                                                            <span style="font-weight: bold; font-size: 20px;">Join now</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="style__service-wrapper___1FShc style__flex-column___I7br6">
+                                            <div class="style__service-header___2OLAv style__normal___3w_8g">How much will I save if I buy this plan?</div>
+                                            <div class="style__flex-column___I7br6 style__p-btm-20___29csB">
+                                                <div class="style__saving-slider-inner___3G1Et">
+                                                    <b>₹</b>
+                                                    <!-- -->0
+                                                </div>
+                                                <div class="style__btm-txt___1EBK5">Savings in 3 Months</div>
+                                            </div>
+                                            <div class="style__service-card-wrapper___1TeV7">
+                                                <div class="style__service-card___31WPm">
+                                                    <div class="style__checkbox-container___28SHw">
+                                                        <div>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                                                <g fill="none" fill-rule="evenodd">
+                                                                    <path d="M-1-1h20v20H-1z"></path>
+                                                                    <path fill="#ff6f61" d="M16 0H2C.9 0 0 .9 0 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM7 14L2 9.192l1.4-1.346L7 11.308 14.6 4 16 5.346 7 14z"></path>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="style__txt-container___1UgMj">
+                                                        <div class="style__service-name___2Kxqc style__normal___3w_8g">I buy medicines every month</div>
+                                                        <div class="style__service-desc___DdVRV">Assuming that you spend ₹1000 on medicines every month</div>
+                                                    </div>
+                                                </div>
+                                                <div class="style__service-card___31WPm">
+                                                    <div class="style__checkbox-container___28SHw">
+                                                        <div>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                                                <g fill="none" fill-rule="evenodd">
+                                                                    <path d="M-1-1h20v20H-1z"></path>
+                                                                    <path fill="#ff6f61" d="M16 0H2C.9 0 0 .9 0 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM7 14L2 9.192l1.4-1.346L7 11.308 14.6 4 16 5.346 7 14z"></path>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="style__txt-container___1UgMj">
+                                                        <div class="style__service-name___2Kxqc style__normal___3w_8g">I get my labs tests done regularly</div>
+                                                        <div class="style__service-desc___DdVRV">Assuming you go for a lab test worth ₹600 once in every 6 months</div>
+                                                    </div>
+                                                </div>
+                                                <div class="style__service-card___31WPm">
+                                                    <div class="style__checkbox-container___28SHw">
+                                                        <div>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                                                <g fill="none" fill-rule="evenodd">
+                                                                    <path d="M-1-1h20v20H-1z"></path>
+                                                                    <path fill="#ff6f61" d="M16 0H2C.9 0 0 .9 0 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM7 14L2 9.192l1.4-1.346L7 11.308 14.6 4 16 5.346 7 14z"></path>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="style__txt-container___1UgMj">
+                                                        <div class="style__service-name___2Kxqc style__normal___3w_8g">I visit the Doctor regularly</div>
+                                                        <div class="style__service-desc___DdVRV">Assuming a specialist doctor consultation worth ₹500 once in every 3 months</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="style__wrapper___1EvBD">
+                                            <div class="style__slider-wrapper___1Gk2-">
+                                                <ul class="style__slider___zukST">
+                                                    <li style="left: 0; width: 0;" class="style__slider-item___FdN0p">
+                                                        <div class="style__listing___3f9cm">
+                                                            <div class="style__header___6eSp3">See what our member are saying</div>
+                                                            <div class="style__desc___1y7j2">
+                                                                &quot;<!-- -->Mujhe es plan mein dawaiyon pe discounts ke saath saath HbA1c test bhi milta hai, matlab mai bahar karata hu HbA1c toh mera 250 rupaye lag jate hai aur ye poora
+                                                                diabetes care plan mujhe 200 rupaye ka padta hai. Sasta toh hai hi, dusra agar ek hi test kara lenge toh bhi humara poora paisa vasool ho gaya. Esmein minimum purchase ka bhi
+                                                                koi limit nahi hai, shipping charge nahi lagega, aur aapko discount jo hai wo milega hi milega.<!-- -->&quot;
+                                                            </div>
+                                                            <div class="style__name-circle___1HvS_">S</div>
+                                                            <div class="style__name___2d6WB">Sonu Shukla</div>
+                                                        </div>
+                                                    </li>
+                                                    <li style="left: 0; width: 0;" class="style__hide___3jr28">
+                                                        <div class="style__listing___3f9cm">
+                                                            <div class="style__header___6eSp3">See what our member are saying</div>
+                                                            <div class="style__desc___1y7j2">
+                                                                &quot;<!-- -->Har purchase pe itna discount kahi nahi milta, pharmacy wale bhi 10% discount hi dete hai, aur baki jangah bas first purchase mein 40% discount dete hai. With
+                                                                this plan I get free delivery on every item, HbA1c tests, and e-consultation. HbA1c test ghar baithe baithe ho jata hai aur reports pe free consultation mil jati hain. Waise
+                                                                tests karaoge toh bhi itne paise toh lag hee jaayenge! Otherwise 1200 rs lagao doctor ke paas jaane mein aur woh wahi dawaiyyan repeat kar deta tha.<!-- -->&quot;
+                                                            </div>
+                                                            <div class="style__name-circle___1HvS_">R</div>
+                                                            <div class="style__name___2d6WB">Rakesh Kumar Gupta</div>
+                                                        </div>
+                                                    </li>
+                                                    <li style="left: 0; width: 0;" class="style__hide___3jr28">
+                                                        <div class="style__listing___3f9cm">
+                                                            <div class="style__header___6eSp3">See what our member are saying</div>
+                                                            <div class="style__desc___1y7j2">
+                                                                &quot;<!-- -->I use DCP for tests and purchase of other items. There is free delivery on every product with amazing discounts. Also, if I go for the test outside, it would
+                                                                definitely cost me more. Ye bhi hai ki check ho jaata hai aapka.<!-- -->&quot;
+                                                            </div>
+                                                            <div class="style__name-circle___1HvS_">A</div>
+                                                            <div class="style__name___2d6WB">Anchit Gupta</div>
+                                                        </div>
+                                                    </li>
+                                                    <li style="left: 0; width: 0;" class="style__hide___3jr28">
+                                                        <div class="style__listing___3f9cm">
+                                                            <div class="style__header___6eSp3">See what our member are saying</div>
+                                                            <div class="style__desc___1y7j2">
+                                                                &quot;<!-- -->The Diabetes Care Plan from 1 Mg makes Diabetes care much more affordable for Diabetics. It is well thought out comprehensive plan and is the best in class
+                                                                Diabetic plan in the marketplace today. I have saved some 12-15 thousand using diabetes plan in the first 3 months.<!-- -->&quot;
+                                                            </div>
+                                                            <div class="style__name-circle___1HvS_">R</div>
+                                                            <div class="style__name___2d6WB">Rakesh Gupta</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="style__indicators-wrapper___6ncYv">
+                                                    <button class="style__prev-button___1MgV8">«</button>
+                                                    <ul class="style__indicators___3BliM">
+                                                        <li class="style__active-indicator___30-uM">1</li>
+                                                        <li class="">2</li>
+                                                        <li class="">3</li>
+                                                        <li class="">4</li>
+                                                    </ul>
+                                                    <button class="style__next-button___2gwh7">»</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="style__stepsView___2LpFq">
+                                            <div class="style__header___MNt4W"></div>
+                                            <div class="col-xs-12"><ol></ol></div>
+                                        </div>
+                                        <div class="style__accordion-container___20kJB">
+                                            <div class="style__f-clm___SsFfN style__card___3eL67 style__white-bg___10nDR style__overflow-hidden___2maTX">
+                                                <div class="style__faq-header___1QjRi style__normal___3w_8g style__bold___s-RLX">Frequently Asked Questions</div>
+                                                <div class="style__accordion___1lWdP">
+                                                    <div class="js-accordianAnchor style__accordion-item___1a6Al">
+                                                        <div class="style__title___2kZiW">
+                                                            <div class="style__title-txt___3csKg style__small___2xmxG style__xx-bold___1gkio">How do I avail discount on medicines?</div>
+                                                            <div class="style__icon___1LRya style__open___1RrDm"></div>
+                                                        </div>
+                                                        <div class="mt8 accordion-close js-openicon style__content___2dLaU style__content-txt___3VUD8 style__small___2xmxG">
+                                                            After you become a Care Plan user, discount coupons will be auto applied on your cart. You will get an additional 7% over and above all offers on other health products such as
+                                                            Vitamins, haircare, skin care etc. Your special discount coupon can be used up till 50 times within membership period and you can avail discount for cart value up to Rs.15000 at a
+                                                            time.
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-accordianAnchor style__accordion-item___1a6Al">
+                                                        <div class="style__title___2kZiW">
+                                                            <div class="style__title-txt___3csKg style__small___2xmxG style__xx-bold___1gkio">Terms &amp; conditions around Free Shipping</div>
+                                                            <div class="style__icon___1LRya style__open___1RrDm"></div>
+                                                        </div>
+                                                        <div class="mt8 accordion-close js-openicon style__content___2dLaU style__content-txt___3VUD8 style__small___2xmxG">
+                                                            - A member is eligible to get Free Shipping Benefit on 20 orders during his 3 month membership period. This cap is introduced keeping in mind that most of our regular users
+                                                            don&#x27;t get impacted however, it will help us curb the misuse of the membership benefit. - Care Plan members will not be charged shipping charges on orders above Rs.50. We are
+                                                            introducing this policy change to ensure that we are able to serve our members in the best possible way while maintaining fair usage within reasonable parameters. These changes
+                                                            have been put into effect to avoid any misuse of the subscription program in the future.
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-accordianAnchor style__accordion-item___1a6Al">
+                                                        <div class="style__title___2kZiW">
+                                                            <div class="style__title-txt___3csKg style__small___2xmxG style__xx-bold___1gkio">My Care Plan is a one-time membership fee or do I have to pay extra?</div>
+                                                            <div class="style__icon___1LRya style__open___1RrDm"></div>
+                                                        </div>
+                                                        <div class="mt8 accordion-close js-openicon style__content___2dLaU style__content-txt___3VUD8 style__small___2xmxG">
+                                                            Fee is not recurring, which means that we will not charge you month-on-month. When you pay for the plan you pay for all the benefits which we will offer through it for 3 months.
+                                                            There are no hidden charges.
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-accordianAnchor style__accordion-item___1a6Al">
+                                                        <div class="style__title___2kZiW">
+                                                            <div class="style__title-txt___3csKg style__small___2xmxG style__xx-bold___1gkio">Can I cancel my subscription plan?</div>
+                                                            <div class="style__icon___1LRya style__open___1RrDm"></div>
+                                                        </div>
+                                                        <div class="mt8 accordion-close js-openicon style__content___2dLaU style__content-txt___3VUD8 style__small___2xmxG">
+                                                            You can cancel the plan till you have not used any Care Plan benefits and you will get a full refund in this case. If you use even one of the benefits then you are not eligible for
+                                                            cancellation &amp; refund.
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-accordianAnchor style__accordion-item___1a6Al">
+                                                        <div class="style__title___2kZiW">
+                                                            <div class="style__title-txt___3csKg style__small___2xmxG style__xx-bold___1gkio">Is the membership fee final?</div>
+                                                            <div class="style__icon___1LRya style__open___1RrDm"></div>
+                                                        </div>
+                                                        <div class="mt8 accordion-close js-openicon style__content___2dLaU style__content-txt___3VUD8 style__small___2xmxG">
+                                                            Membership plan is currently offered at introductory price and is liable to change at Tata 1mg&#x27;s discretion. In case of any updation in the membership fee, you don&#x27;t have
+                                                            to pay anything extra for your ongoing plan. However, the plan renewals will happen at updated prices only.
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-accordianAnchor style__accordion-item___1a6Al">
+                                                        <div class="style__title___2kZiW">
+                                                            <div class="style__title-txt___3csKg style__small___2xmxG style__xx-bold___1gkio">Is there a maximum limit on the discounts?</div>
+                                                            <div class="style__icon___1LRya style__open___1RrDm"></div>
+                                                        </div>
+                                                        <div class="mt8 accordion-close js-openicon style__content___2dLaU style__content-txt___3VUD8 style__small___2xmxG">
+                                                            Discounts are subject to a maximum capping for all users on the 1mg platform. Care Plan members get an extra 2% discounts on prescription medicine along with a higher maximum
+                                                            capping for these discounts, as compared to non-care plan users. The maximum capping at any given point in time is dependent on the platform offer that is live. Please visit the
+                                                            offers page to know more about the current platform offer.
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-accordianAnchor style__accordion-item___1a6Al">
+                                                        <div class="style__title___2kZiW">
+                                                            <div class="style__title-txt___3csKg style__small___2xmxG style__xx-bold___1gkio">How will lab test be conducted ? Is it available in all cities ?</div>
+                                                            <div class="style__icon___1LRya style__open___1RrDm"></div>
+                                                        </div>
+                                                        <div class="mt8 accordion-close js-openicon style__content___2dLaU style__content-txt___3VUD8 style__small___2xmxG">
+                                                            Lab Test will be conducted from the comfort of your home. Once the sample is picked up from your place it will be proccessed in the lab and report will be generate it 1-2 days
+                                                            which will be directly be sent to your registered email ID. You can also view it on your app under \&quot;MyLabTests\&quot;. Lab Test facility is available in the following cities
+                                                            : Delhi, Gurgaon, Ghaziabad, Noida, Faridabad, Pune, Hyderabad, Bengaluru, Chennai, Jaipur, Mumbai, Navi Mumbai, Thane, Kolkata, Chandigarh, Lucknow, Mohali, Panchkula, Jalandhar,
+                                                            Kalyan, Bhubaneshwar, Nagpur, Surat, Ranchi, Raipur, Rajkot, Nashik, Coimbatore, Kolhapur, Indore, Bhopal, Patna, Ahmedabad, Vishakhapatnam
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-accordianAnchor style__accordion-item___1a6Al">
+                                                        <div class="style__title___2kZiW">
+                                                            <div class="style__title-txt___3csKg style__small___2xmxG style__xx-bold___1gkio">What do you mean by free premium consults?</div>
+                                                            <div class="style__icon___1LRya style__open___1RrDm"></div>
+                                                        </div>
+                                                        <div class="mt8 accordion-close js-openicon style__content___2dLaU style__content-txt___3VUD8 style__small___2xmxG">
+                                                            As a part of our Care Plan you will get premium express consults, under this you will get a reply within 2-3 hrs. We do offer a free consult service to all our customers but under
+                                                            free-consult, doctor might reply as per his availability which varies from 12-24 hrs. Under Care Plan you can chat with a Diabetes specialist or any other specialist doctor,
+                                                            general physician for medical assistance.
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-accordianAnchor style__accordion-item___1a6Al">
+                                                        <div class="style__title___2kZiW">
+                                                            <div class="style__title-txt___3csKg style__small___2xmxG style__xx-bold___1gkio">Is my order eligible for rapid delivery with this Care Plan membership?</div>
+                                                            <div class="style__icon___1LRya style__open___1RrDm"></div>
+                                                        </div>
+                                                        <div class="mt8 accordion-close js-openicon style__content___2dLaU style__content-txt___3VUD8 style__small___2xmxG">
+                                                            Care Plan members now enjoy rapid delivery. Members get their orders delivered same day or next day at a discounted price. Currently available in New Delhi, Noida, Ghaziabad,
+                                                            Gurgaon, Mumbai, Bangalore, Kolkata and 24 North Parganas. Expanding to all cities soon.
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-accordianAnchor style__accordion-item___1a6Al">
+                                                        <div class="style__title___2kZiW">
+                                                            <div class="style__title-txt___3csKg style__small___2xmxG style__xx-bold___1gkio">Termination &amp; Misuse of Membership</div>
+                                                            <div class="style__icon___1LRya style__open___1RrDm"></div>
+                                                        </div>
+                                                        <div class="mt8 accordion-close js-openicon style__content___2dLaU style__content-txt___3VUD8 style__small___2xmxG">
+                                                            Misuse of Care Plan membership or benefits of membership may result in termination of membership. In such a case Tata 1mg holds sole rights to terminate or withdraw some benefits
+                                                            for such users. Disqualification of a Care Plan member, arising out of his/her misconduct, fraud and misuse of benefits may result in termination of his/her membership and will not
+                                                            be eligible to become a member once again.
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-accordianAnchor style__accordion-item___1a6Al">
+                                                        <div class="style__title___2kZiW">
+                                                            <div class="style__title-txt___3csKg style__small___2xmxG style__xx-bold___1gkio">What is 1mg Cash, when will it be credited and how can I use it?</div>
+                                                            <div class="style__icon___1LRya style__open___1RrDm"></div>
+                                                        </div>
+                                                        <div class="mt8 accordion-close js-openicon style__content___2dLaU style__content-txt___3VUD8 style__small___2xmxG">
+                                                            1mgCash is virtual money that will get added to your Tata 1mg wallet . You can use this for placing orders. With each order you can use 20% of your wallet cash. 1mg cash is earned
+                                                            only after you place an order with us and it is added to your account automatically after the delivery of the order. 1 unit of 1mgCash equals to 1Re.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="style__f-row___mjODN">
+                                            <div class="style__sticky-ft___2Aecq">
+                                                <div class="style__multiplan-list___3P48k" bgColor="white">
+                                                    <div class="style__f-row___mjODN style__alignTop___18bcF style__flex-wrap___29yk1 style__flex1___uSwBX">
+                                                        <div class="style__checkbox___1A3V3">
+                                                            <span class="">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                                    <path
+                                                                        fill="#FF6F61"
+                                                                        fill-rule="evenodd"
+                                                                        d="M12 7c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0-5C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+                                                                    ></path>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="style__f-row___mjODN style__alignCenter___1xPpQ">
+                                                            <div class="style__variant-price___2bdn2">
+                                                                <div>₹<!-- -->165</div>
+                                                            </div>
+                                                            <div class="style__variant-monthly-price___3Tce8 style__information-secondary___1QUhZ">
+                                                                for
+                                                                <!-- -->3<!-- -->
+                                                                months<span class="style__tag___frGFw">NEW</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="style__f-row___mjODN style__alignTop___18bcF style__flex-wrap___29yk1 style__flex1___uSwBX">
+                                                        <div class="style__checkbox___1A3V3">
+                                                            <span class="">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                                    <path fill="#767676" fill-rule="evenodd" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="style__f-row___mjODN style__alignCenter___1xPpQ">
+                                                            <div class="style__variant-price___2bdn2">
+                                                                <div>₹<!-- -->275</div>
+                                                            </div>
+                                                            <div class="style__variant-monthly-price___3Tce8 style__information-secondary___1QUhZ">
+                                                                for
+                                                                <!-- -->6<!-- -->
+                                                                months<span style="font-weight: 600;" class="style__tag___frGFw style__green-bgtag___1K0o9">Save 16%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="style__alignCenter___1xPpQ" href="../cart/payment-dcp/60754abd5c9d821af4f7d7a34d51.html?addons=true"><div class="style__join-now-dweb___sHfBM">Join now</div></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="style__subs-footer___36UIz">
+                                            <div class="style__subs-footer-item___2_M0Q style__needHelpCta___1n_l1">
+                                                <a href="../support/chat6629.html?page_id=NEED_HELP::chat_icon&amp;bu=pharmacy&amp;label=Default">
+                                                    <div class="styles__cta-wrapper___YNJZq">
+                                                        <a target="_self">
+                                                            <div class="style__container___3wimV style__primary___G71Z8 style__full-width___1mWBa style__round___3d7wi style__no-arrows___3eSSm"><span>Need Help?</span></div>
+                                                        </a>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <footer id="footer-bar" class="style__footer-container___1uRLj style__black-color___MucSg style__f14___1FE-V">
+                                        <div class="style__top-bar___5ZPPN">
+                                            <div class="style__top-head___2h8g-"><h2>INDIA’S LARGEST HEALTHCARE PLATFORM</h2></div>
+                                            <div class="style__flex-box____V1Y1 style__stats-bar___w397H">
+                                                <div>
+                                                    <div class="style__stats-num___3Ns_4">160m+</div>
+                                                    <div class="style__stats-text___DUvDf">Visitors</div>
+                                                </div>
+                                                <div>
+                                                    <div class="style__stats-num___3Ns_4">27m+</div>
+                                                    <div class="style__stats-text___DUvDf">Orders Delivered</div>
+                                                </div>
+                                                <div>
+                                                    <div class="style__stats-num___3Ns_4">1800+</div>
+                                                    <div class="style__stats-text___DUvDf">Cities</div>
+                                                </div>
+                                            </div>
+                                            <div class="style__border-btm___1wdot"></div>
+                                            <div class="style__flex-box____V1Y1 style__down-bar___3FV6g">
+                                                <div class="style__free-text___3jZ7n style__f20___2opYM">Get the link to download App</div>
+                                                <div class="style__input-box___7akGm">
+                                                    <form>
+                                                        <input
+                                                            type="tel"
+                                                            id="phoneNumber"
+                                                            class="style__input-phone___2P9PU"
+                                                            placeholder="Enter Phone Number"
+                                                            maxlength="10"
+                                                            autocomplete="off"
+                                                            value=""
+                                                            pattern="[6-9]\d{9}"
+                                                            title="Please enter valid 10 digits"
+                                                            required=""
+                                                        />
+                                                        <button type="submit" class="style__next-button___3J4Nx">Send Link</button>
+                                                    </form>
+                                                </div>
+                                                <div class="style__cap-wrap___38IWm"></div>
+                                            </div>
+                                        </div>
+                                        <div class="style__flex-box____V1Y1 style__main-link-bar___12igi">
+                                            <div class="style__main-content___2sd49">
+                                                <div>
+                                                    <h3 class="style__f16___7B4eA style__fweight500___oy16u">Know Us</h3>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="../aboutUs.html"><span>About Us</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../contactUs.html"><span>Contact Us</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../press-coverage.html"><span>Press Coverage</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://1mg.darwinbox.in/ms/candidate/careers"><span>Careers</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://partners.1mg.com/"><span>Business Partnership</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../healthpartner.html"><span>Become a Health Partner</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="style__main-content___2sd49">
+                                                <div>
+                                                    <h3 class="style__f16___7B4eA style__fweight500___oy16u">Our Policies</h3>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="../PrivacyPolicy.html"><span>Privacy Policy</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../Tnc.html"><span>Terms and Conditions </span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../editorial-policy-processes.html"><span>Editorial Policy</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../return-policy.html"><span>Return Policy</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../ip-policy.html"><span>IP Policy</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../grievance-redressal-policy.html"><span>Grievance Redressal Policy</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="style__main-content___2sd49">
+                                                <div>
+                                                    <h3 class="style__f16___7B4eA style__fweight500___oy16u">Our Services</h3>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="../index.html"><span>Order Medicines</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../labs.html"><span>Book Lab Tests</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../online-doctor-consultation.html"><span>Consult a Doctor</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../ayurveda.html"><span>Ayurveda Articles</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../hi/patanjali.html"><span>Hindi Articles</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="subscriptions.html"><span>Care Plan</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="style__main-content___2sd49">
+                                                <div>
+                                                    <h3 class="style__f16___7B4eA style__fweight500___oy16u">Connect</h3>
+                                                    <ul>
+                                                        <li><span class="style__s-head___367TK">Social Links</span></li>
+                                                        <li class="style__m-web___2xu0C">
+                                                            <a href="https://www.facebook.com/1mgOfficial" alt="Facebook" rel="nofollow" target="_blank"><div class="facebook"></div></a>
+                                                            <a href="https://twitter.com/1mgofficial" alt="Twitter" rel="nofollow" target="_blank"><div class="twitter"></div></a>
+                                                            <a href="https://www.youtube.com/c/1mgofficial" alt="You Tube" rel="nofollow" target="_blank"><div class="youtube"></div></a>
+                                                            <a href="https://www.linkedin.com/company/1mg" alt="Linkedin" rel="nofollow" target="_blank"><div class="linkedin"></div></a>
+                                                            <a href="https://medium.com/1mgofficial" alt="Medium Link" rel="nofollow" target="_blank"><div class="medium"></div></a>
+                                                        </li>
+                                                        <li><span class="style__grey-txt___2FAow">Want daily dose of health?</span></li>
+                                                        <li><button class="style__signup-btn___2h_dH">SIGN UP</button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="style__main-content___2sd49">
+                                                <div>
+                                                    <h5>Download App</h5>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="https://play.google.com/store/apps/details?id=com.aranoah.healthkart.plus"><div class="google_play style__m12___25Let"></div></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://itunes.apple.com/in/app/1mg/id554578419?mt=8"><div class="apple_store"></div></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="style__auth-bar___bYPU8">
+                                            <div class="style__auth-cont___2vf7G">
+                                                <div class="reliable"></div>
+                                                <div class="style__details-wrapper___3X0Wt">
+                                                    <h5 class="style__f18___1g_my">Reliable</h5>
+                                                    <p class="style__f12___3AbTH style__grey-txt___2FAow">
+                                                        All products displayed on Tata 1mg are procured from verified and licensed pharmacies. All labs listed on the platform are accredited
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="style__auth-cont___2vf7G">
+                                                <div class="secure"></div>
+                                                <div class="style__details-wrapper___3X0Wt">
+                                                    <h5 class="style__f18___1g_my">Secure</h5>
+                                                    <p class="style__f12___3AbTH style__grey-txt___2FAow">
+                                                        Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption and is Payment Card Industry Data Security Standard (PCI DSS) compliant
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="style__auth-cont___2vf7G">
+                                                <div class="affordable"></div>
+                                                <div class="style__details-wrapper___3X0Wt">
+                                                    <h5 class="style__f18___1g_my">Affordable</h5>
+                                                    <p class="style__f12___3AbTH style__grey-txt___2FAow">Find affordable medicine substitutes, save up to 50% on health products, up to 80% off on lab tests and free doctor consultations.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="style__trust-bar___1TfPG">
+                                            <div class="style__trust-stamps____4BQl">
+                                                <div class="style__legitscript___2ZisC style__with-legitscript___2Tut6">
+                                                    <div><script src="../../static.legitscript.com/seals/729605.js"></script></div>
+                                                </div>
+                                                <div class="style__with-legitscript___2Tut6">
+                                                    <div class="style__image-container___Nt9vX"><div class=""></div></div>
+                                                </div>
+                                            </div>
+                                            <div class="style__free-text3___3upNE">India&#x27;s only LegitScript and ISO/ IEC 27001 certified online healthcare platform</div>
+                                        </div>
+                                        <div class="style__collapse___1sCdv">
+                                            <div class="style__f-head___2SFeL">
+                                                <h2 class="style__know-text___1bUL7">
+                                                    <!-- -->Know more about Tata 1mg
+                                                    <span class="style__b-collapse___3gaL1">
+                                                        <span><img src="https://img.1mg.com/images/down-arrowRebrand.svg" alt="downArrow" /></span>
+                                                    </span>
+                                                </h2>
+                                            </div>
+                                            <div class="style__hide-desc___2aJU_">
+                                                <div></div>
+                                                <div>
+                                                    <article>
+                                                        <h3>Access medical and health information</h3>
+                                                        <p class="style__f14___1FE-V">
+                                                            Tata 1mg provides you with medical information which is curated, written and verified by experts, accurate and trustworthy. Our experts create high-quality content about medicines,
+                                                            diseases, lab investigations, Over-The-Counter (OTC) health products, Ayurvedic herbs/ingredients, and alternative remedies.
+                                                        </p>
+                                                    </article>
+                                                </div>
+                                                <div>
+                                                    <article>
+                                                        <h3>Order medicines online</h3>
+                                                        <p class="style__f14___1FE-V">
+                                                            Get free medicine home delivery in over 1800 cities across India. You can also order Ayurvedic, Homeopathic and other Over-The-Counter (OTC) health products. Your safety is our top
+                                                            priority. All products displayed on Tata 1mg are procured from verified and licensed pharmacies.
+                                                        </p>
+                                                    </article>
+                                                </div>
+                                                <div>
+                                                    <article>
+                                                        <h3>Book lab tests</h3>
+                                                        <p class="style__f14___1FE-V">
+                                                            Book any lab tests and preventive health packages from certified labs and get tested from the comfort of your home. Enjoy free home sample collection, view reports online and
+                                                            consult a doctor online for free.
+                                                        </p>
+                                                    </article>
+                                                </div>
+                                                <div>
+                                                    <article>
+                                                        <h3>Consult a doctor online</h3>
+                                                        <p class="style__f14___1FE-V">
+                                                            Got a health query? Consult doctors online from the comfort of your home for free. Chat privately with our registered medical specialists to connect directly with verified doctors.
+                                                            Your privacy is guaranteed.
+                                                        </p>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="style__flex-box____V1Y1 style__b-text___uV-wn">
+                                            <div>
+                                                <div class="style__copyright___qclAW">
+                                                    © 2022 Tata 1mg. All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don&#x27;t process requests for Schedule X and other habit
+                                                    forming drugs.
+                                                </div>
+                                            </div>
+                                            <div class="payment"></div>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                            <script>
+                                
+                            </script>
+                            <!-- <script src="../../static.1mg.com/js/carePlanSellingPage.bundle.454622099171da8cdcac62dc86c7a38f.js"></script> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mob-overlay" data-role="hide-mob-menu"></div>
+        </div>
+        <input type="hidden" value="undefined" class="fromPage" />
+        <!-- <script id="raven-bundle" src="../../cdn.ravenjs.com/3.8.1/raven.min.js" async defer></script> -->
+        <style>
+            @font-face{
+              font-family: 'Clear Sans';
+              src: url('https://static.1mg.com/css/fonts/clearsans-1.00/WOFF2/ClearSans-Regular.woff2');
+              src: url('https://static.1mg.com/css/fonts/clearsans-1.00/EOT/ClearSans-Regular.eot');
+              src: url('https://static.1mg.com/css/fonts/clearsans-1.00/EOT/ClearSans-Regular.eot?iefix') format('eot'),
+              url('https://static.1mg.com/css/fonts/clearsans-1.00/WOFF2/ClearSans-Regular.woff2') format('woff2'),
+              url('https://static.1mg.com/css/fonts/clearsans-1.00/WOFF/ClearSans-Regular.woff') format('woff'),
+              url('https://static.1mg.com/css/fonts/clearsans-1.00/TTF/ClearSans-Regular.ttf') format('truetype'),
+              url('https://static.1mg.com/css/fonts/clearsans-1.00/SVG/ClearSans-Regular.svg#webfont') format('svg');
+              font-display: swap;
+            }
+
+            @font-face{
+              font-family: 'Clear Sans Light';
+              src: url('https://static.1mg.com/css/fonts/clearsans-1.00/EOT/ClearSans-Light.eot');
+              src: url('https://static.1mg.com/css/fonts/clearsans-1.00/EOT/ClearSans-Light.eot?iefix') format('eot'),
+              url('https://static.1mg.com/css/fonts/clearsans-1.00/WOFF2/ClearSans-Light.woff2') format('woff2'),
+              url('https://static.1mg.com/css/fonts/clearsans-1.00/WOFF/ClearSans-Light.woff') format('woff'),
+              url('https://static.1mg.com/css/fonts/clearsans-1.00/TTF/ClearSans-Light.ttf') format('truetype'),
+              url('https://static.1mg.com/css/fonts/clearsans-1.00/SVG/ClearSans-Light.svg#webfont') format('svg');
+              font-display: swap;
+            }
+        </style>
+        <div id="component"></div>
+        <script>
+            //Enable lazy loading of images
+            // document.addEventListener("DOMContentLoaded", function () {
+            //     window.LazyLoad && (window.lazyLoadWebInstance = new LazyLoad({ elements_selector: ".web_img-lazy", class_loading: "web_img-lazy--loading", class_loaded: "web_img-lazy--loaded", class_error: "web_img-lazy--error" }));
+            // });
+        </script>
+        <script>
+            // document.addEventListener("DOMContentLoaded", function () {
+            //     if (typeof userFlow !== "undefined") {
+            //         // userFlow.initPincodeContainer();
+            //         userFlow.initCityContainer();
+            //         userFlow.initSearchBar();
+            //         userFlow.initModal();
+            //         userFlow.initHeaderEvents();
+            //         userFlow.initFooterEvents();
+            //         userFlow.initHeader();
+            //         userFlow.initScrollTop();
+            //         userFlow.updateCityFromCookie();
+            //     } else if (dataLayer.length && getCookie && getCookie("affiliateDetails").indexOf("flipkart") > -1) {
+            //         dataLayer[0].showExternalElements = false;
+            //     }
+            //     if (document.getElementsByClassName("no-animate")[0]) {
+            //         document.getElementsByClassName("no-animate")[0].classList.remove("no-animate");
+            //     }
+            // });
+
+            // if (document.getElementById("raven-bundle")) {
+            //     document.getElementById("raven-bundle").onload = function () {
+            //         Raven.config("https://af0a11ecba564bd9ae2e978b96f6f3d3@frontend-sentry.1mg.com/3").install();
+            //     };
+            // }
+        </script>
+        <script>
+            var googletag = googletag || {};
+            googletag.cmd = googletag.cmd || [];
+        </script>
+        <script>
+            // document.addEventListener("DOMContentLoaded", function () {
+            //     var buttons = Array.from(document.getElementsByClassName("sub-menu-link"));
+            //     buttons.forEach((btn) => {
+            //         btn.addEventListener("click", () => {
+            //             var btnType = btn.getAttribute("data-value");
+            //             if (btnType === "login" || btnType === "signup") {
+            //                 var event = new CustomEvent("MOUNT", { bubbles: true, detail: btnType });
+            //                 btn.dispatchEvent(event);
+            //             }
+            //         });
+            //     });
+            // });
+        </script>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KR9MB8" height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
+        <script>
+            // (function (w, d, s, l, i) {
+            //     w[l] = w[l] || [];
+            //     w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            //     var f = d.getElementsByTagName(s)[0],
+            //         j = d.createElement(s),
+            //         dl = l != "dataLayer" ? "&l=" + l : "";
+            //     j.async = true;
+            //     j.src = "../../www.googletagmanager.com/gtm5445.html?id=" + i + dl;
+            //     f.parentNode.insertBefore(j, f);
+            // })(window, document, "script", "dataLayer", "GTM-KR9MB8");
+        </script>
+        <script>
+            // window.offers = {
+            //     upload_rx: {
+            //         mobile_web: { display_text: "Upload prescription and tell us what you need. We do the rest!", cta: "UPLOAD", header: "Order quickly with prescription" },
+            //         desktop_web: { display_text: "Upload prescription and tell us what you need. We do the rest!", cta: "UPLOAD", header: "Order quickly with prescription" },
+            //     },
+            //     allopathy_page_offer_text: null,
+            //     otc_page_offer_text: "Up to 40% off",
+            //     footer_image: "https://res.cloudinary.com/du8msdgbj/image/upload/w_628,h_604,a_ignore,q_auto,f_auto/v1573200392/MWeb_Footer_Android_homepage_brrwvh.png",
+            //     quick_buy_offer_text: "Flat 25% off on medicines*",
+            //     rx_order_page_offer_text: "Flat 25% off on medicines*",
+            //     sku_cashback: null,
+            //     udp_offer_text: "Get up to 80% off on popular health products. Earn extra cashback with Paytm, Mobikwik & more. T&Cs apply.",
+            //     coupon_detail: { cashback: "", discount: "", coupon_code: null },
+            //     home_page_offer_text: "Save on Medical Bills",
+            //     category_page_offer_text: "Up to 40% off",
+            //     sku_discount: null,
+            //     order_success_page: { desktop_image: "", mobile_image: "https://onemg.gumlet.io/003.order_mobile_banner_hb9ceg.png?format=auto", on_click_link: "/labs" },
+            //     TEMP_USER_ID: "58a88e14-7616-11ec-ad20-0a54611830b2",
+            //     lastUpdatedAt: 1642259889074,
+            // };
+        </script>
+        <script>
+            // document.addEventListener("DOMContentLoaded", function () {
+            //     var buttons = Array.from(document.getElementsByClassName("mobile-web-sidenav"));
+            //     buttons.forEach((btn) => {
+            //         btn.addEventListener("click", () => {
+            //             var btnType = btn.getAttribute("data-value");
+            //             if (btnType === "login" || btnType === "signup") {
+            //                 var event = new CustomEvent("MOUNT", { bubbles: true, detail: btnType });
+            //                 btn.dispatchEvent(event);
+            //             }
+            //         });
+            //     });
+            // });
+        </script>
+        <script>
+            // (function (w, d, t, r, u) {
+            //     var f, n, i;
+            //     (w[u] = w[u] || []),
+            //         (f = function () {
+            //             var o = { ti: "5268488" };
+            //             (o.q = w[u]), (w[u] = new UET(o)), w[u].push("pageLoad");
+            //         }),
+            //         (n = d.createElement(t)),
+            //         (n.src = r),
+            //         (n.async = 1),
+            //         (n.onload = n.onreadystatechange = function () {
+            //             var s = this.readyState;
+            //             (s && s !== "loaded" && s !== "complete") || (f(), (n.onload = n.onreadystatechange = null));
+            //         }),
+            //         (i = d.getElementsByTagName(t)[0]),
+            //         i.parentNode.insertBefore(n, i);
+            // })(window, document, "script", "../../bat.bing.com/bat.js", "uetq");
+        </script>
+        <!-- <div class="push"></div> -->
+    </body>
+</html>

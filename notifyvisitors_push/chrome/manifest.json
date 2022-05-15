@@ -1,0 +1,16 @@
+{
+  "name": "1MG",
+  "short_name": "1MG",
+  "icons": [ {
+            "src": "https://res.cloudinary.com/dusqx2w0c/image/upload/v1628083029/vvlzmvp9d1jnhrs43ki6.png",
+            "sizes": "192x192",
+            "type": "image/png"
+            } ],
+  "start_url": "/?webapp=1&utm_source=NotifyVisitors&utm_medium=pwa",
+  "orientation": "portrait",
+  "display": "standalone",
+  "theme_color": "#fff3e3",
+  "background_color": "#ff6f61",
+  "gcm_sender_id": "",
+  "gcm_user_visible_only": true
+}
