@@ -1,3 +1,5 @@
+alert()
+
 var toggleFaq = document.querySelectorAll(".toggle-faq");
     if(toggleFaq) {
         for(i = 0; i <= toggleFaq.length; i++) {
@@ -435,7 +437,7 @@ function InvestComut() {
 
 
 
-function selectInvestmentPackage(e) {
+function selectproductCategory(e) {
     
     selectTag = document.getElementById(e);
     selectedTagactualId = selectTag.getAttribute("id");

@@ -17,6 +17,12 @@ body {
     color: #3e3e3f;
     background: #67748e36;
 }
+#addproduct label {
+    position: relative !important;
+}
+.producttooltip {
+    display: block;
+}
 .productusagetooltip::after {
     content: "";bottom: 10;border: 50px solid #222422;z-index: 99;position: absolute;
     

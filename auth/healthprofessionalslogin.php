@@ -26,7 +26,7 @@ if( isset($_POST['email']) && isset($_POST['password'])){
         
     $password = trim($_POST['password']);
     
-    $Active = 1;
+    $Active = "Active";
 
         $con = new PDO("mysql:host=$serverhost;dbname=fundgcmf_primehealth;" , $serverusername, $serverpassword);
         $login = $con->prepare("SELECT * FROM healthprofessionals WHERE email = ? ");
