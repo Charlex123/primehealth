@@ -79,7 +79,9 @@ if(!isset($_SESSION['user'])) {
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
-  <script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+  <!-- <script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script> -->
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
   <!-- CSS Files -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.5" rel="stylesheet" />
@@ -1132,14 +1134,23 @@ if(!isset($_SESSION['user'])) {
   <script src="../assets/js/plugins/chartjs.min.js"></script>
   <script>
 
-    CKEDITOR.replace( 'shortproductdescription' );
-    CKEDITOR.replace( 'fullproductdescription' );
-    CKEDITOR.replace( 'productusageinfo' );
-    CKEDITOR.replace( 'drugusageinfo' );
-    CKEDITOR.replace( 'drugadverseeffects' );
-    CKEDITOR.replace( 'drugcontraindications' );
-    CKEDITOR.replace( 'drugdosage' );
+    // CKEDITOR.replace( 'shortproductdescription' );
+    // CKEDITOR.replace( 'fullproductdescription' );
+    // CKEDITOR.replace( 'productusageinfo' );
+    // CKEDITOR.replace( 'drugusageinfo' );
+    // CKEDITOR.replace( 'drugadverseeffects' );
+    // CKEDITOR.replace( 'drugcontraindications' );
+    // CKEDITOR.replace( 'drugdosage' );
 
+    tinymce.init({
+        selector: '#shortproductdescription',
+        selector: '#fullproductdescription',
+        selector: '#productusageinfo',
+        selector: '#drugusageinfo',
+        selector: '#drugadverseeffects',
+        selector: '#drugcontraindications',
+        selector: '#drugdosage'
+      });
 
     var ctx = document.getElementById("chart-bars").getContext("2d");
 
