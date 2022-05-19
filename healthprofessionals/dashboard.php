@@ -80,7 +80,7 @@ if(!isset($_SESSION['user'])) {
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- <script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script> -->
-  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script src="https://cdn.tiny.cloud/1/s2dq9a4aoaulcq80cjf6ec0bmwezjtrm6t4gkfs1bsstxorl/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
   <!-- CSS Files -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -585,19 +585,19 @@ if(!isset($_SESSION['user'])) {
                               <div class="d-none" id="showdruginfo">
                                 <div class="mt-0 mb-3">
                                     <label for="drugdosage" class="position-relative">Drug Dosage Information <span class="text-danger">*</span><div class="producttooltip d-none bottom-10 mb-4 position-absolute bg-gray-200 px-2 py-1 rounded-2 "><small>Brand name is the official brand name of the product/drug</small></div><button type="button" class="m-1 bg-transparent addproducttooltip"><i class="fa fa-question-circle-o text-red-500"></i></button></label>
-                                    <input type="text" name="drugdosage" id="drugdosage" class="bg-gray-50 forma text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter product brand name" required>
+                                    <input type="text" name="drugdosage" id="drugdosage" class="bg-gray-50 forma text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter drug dosage information" required>
                                 </div>
                                 <div class="my-3">
                                   <label for="drugdosage" class="position-relative">Drug Adverse Effects <span class="text-danger">*</span><div class="producttooltip d-none bottom-10 mb-4 position-absolute bg-gray-200 px-2 py-1 rounded-2 "><small>Brand name is the official brand name of the product/drug</small></div><button type="button" class="m-1 bg-transparent addproducttooltip"><i class="fa fa-question-circle-o text-red-500"></i></button></label>
-                                  <input type="text" name="drugadverseeffects" id="drugadverseeffects" class="bg-gray-50 forma text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter product brand name" required>
+                                  <input type="text" name="drugadverseeffects" id="drugadverseeffects" class="bg-gray-50 forma text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter drug adverse effects" required>
                                 </div>
                                 <div class="my-3">
                                   <label for="drugdosage" class="position-relative">Drug Contra-Indications <span class="text-danger">*</span><div class="producttooltip d-none bottom-10 mb-4 position-absolute bg-gray-200 px-2 py-1 rounded-2 "><small>Brand name is the official brand name of the product/drug</small></div><button type="button" class="m-1 bg-transparent addproducttooltip"><i class="fa fa-question-circle-o text-red-500"></i></button></label>
-                                  <input type="text" name="drugcontraindications" id="drugcontraindications" class="bg-gray-50 forma text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter product brand name" required>
+                                  <input type="text" name="drugcontraindications" id="drugcontraindications" class="bg-gray-50 forma text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter drug contraindications" required>
                                 </div>
                                 <div class="my-3">
                                   <label for="drugusageinfo" class="position-relative">Drug Usage Information <span class="text-danger">*</span><div class="producttooltip d-none bottom-10 mb-4 position-absolute bg-gray-200 px-2 py-1 rounded-2"><small>Brand name is the official brand name of the product/drug</small></div><button type="button" class="m-1 bg-transparent addproducttooltip"><i class="fa fa-question-circle-o text-red-500"></i></button></label>
-                                  <input type="text" name="drugusageinfo" id="drugusageinfo" class="bg-gray-50 forma text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter product brand name" required>
+                                  <input type="text" name="drugusageinfo" id="drugusageinfo" class="bg-gray-50 forma text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter drug usage information" required>
                                 </div>
                               </div>
                               
@@ -1143,14 +1143,50 @@ if(!isset($_SESSION['user'])) {
     // CKEDITOR.replace( 'drugdosage' );
 
     tinymce.init({
-        selector: '#shortproductdescription',
-        selector: '#fullproductdescription',
-        selector: '#productusageinfo',
-        selector: '#drugusageinfo',
-        selector: '#drugadverseeffects',
-        selector: '#drugcontraindications',
-        selector: '#drugdosage'
+        selector: '#shortproductdescription'
       });
+
+      tinymce.init({
+        selector: '#fullproductdescription'
+      });
+
+      tinymce.init({
+        selector: '#drugadverseeffects'
+      });
+
+      tinymce.init({
+        selector: '#drugusageinfo'
+      });
+
+      tinymce.init({
+        selector: '#productusageinfo'
+      });
+
+      tinymce.init({
+        selector: '#drugcontraindications'
+      });
+      tinymce.init({
+        selector: '#productusageinfo'
+      });
+      tinymce.init({
+        selector: '#drugdosage'
+      })
+
+      // var container1 = document.getElementById('shortproductdescription');
+      // var editor1 = new Quill(container1);
+      // var container2 = document.getElementById('fullproductdescription');
+      // var editor2 = new Quill(container2);
+      // var container3 = document.getElementById('productusageinfo');
+      // var editor3 = new Quill(container3);
+      // var container4 = document.getElementById('drugusageinfo');
+      // var editor4 = new Quill(container4);
+      // var container5 = document.getElementById('drugadverseeffects');
+      // var editor5 = new Quill(container5);
+      // var container6 = document.getElementById('drugcontraindications');
+      // var editor6 = new Quill(container6);
+      // var container7 = document.getElementById('drugdosage');
+      // var editor7 = new Quill(container7);
+
 
     var ctx = document.getElementById("chart-bars").getContext("2d");
 
