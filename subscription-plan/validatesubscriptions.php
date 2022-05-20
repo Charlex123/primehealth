@@ -27,7 +27,7 @@
         ini_set('display_errors','1');
         
         require_once'../config.php';
-        echo $_POST['username'];
+
         if($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['username']) && $_POST['username'] !="") {
             
             $username = isset($_POST['username']) ? $_POST['username'] : false;
@@ -39,17 +39,17 @@
               $message = "<div class='alert-danger pt-2 pb-2 rounded'>invalid,  Username must be a misture of alphabets and numbers with no special characters and spaces <span class='close-err'>&times;</span> </div>";
               exit();
           }else {
-            $con= new PDO("mysql:host=$serverhost;dbname=fundgcmf_primehealth;" , $serverusername, $serverpassword);
-                      $query = $con->prepare("SELECT username FROM users WHERE username=? LIMIT 1");
-                      $e_Check = $query->bindParam(1, $username, PDO::PARAM_STR);
-                      $e_Check = $query->execute();
-                      if( $e_Check=$query->rowCount() > 0) {
-                        $message =  "username already taken, please choose another <i class='fas fa-times' style='color: red'></i>";
-                        exit();
-                      }else{
-                        $message = $username. ' is OK <i class="fas fa-check" style="color: green"></i>';
-                        exit();
-                      }
+                $con= new PDO("mysql:host=$serverhost;dbname=fundgcmf_primehealth;" , $serverusername, $serverpassword);
+                $query = $con->prepare("SELECT username FROM healthprofessionals WHERE username=? LIMIT 1");
+                $e_Check = $query->bindParam(1, $username, PDO::PARAM_STR);
+                $e_Check = $query->execute();
+                if( $e_Check=$query->rowCount() > 0) {
+                    echo $message =  "username already taken, please choose another <i class='fas fa-times' style='color: red'></i>";
+                exit();
+                }else{
+                    echo $message = $username. ' is OK <i class="fas fa-check" style="color: green"></i>';
+                exit();
+                }
           }
     }
             
@@ -174,7 +174,7 @@ if($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['email']) && $_POST['email
          exit();
      }
 
-     if(!filter_var($email, FILTER_VALIDATE_email)) {
+     if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             echo ' invalid email address, please verify your email address';
             exit();
         }else if(!preg_match("/^[a-z `A-Z0-9@.]*$/",$email) && strip_tags($email)) {
@@ -184,11 +184,54 @@ if($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['email']) && $_POST['email
          }else{
             //check email
             $con= new PDO("mysql:host=$serverhost;dbname=fundgcmf_primehealth;" , $serverusername, $serverpassword);
-            $query = $con->prepare("SELECT email FROM users WHERE email=? LIMIT 1");
+            $query = $con->prepare("SELECT email FROM healthprofessionals WHERE email=? LIMIT 1");
             $e_Check = $query->bindParam(1, $email, PDO::PARAM_STR);
             $e_Check = $query->execute();
             if( $e_Check=$query->rowCount() > 0) {
                 echo  "email already taken, please choose another <i class='fas fa-times' style='color: red'></i>";
+                exit();
+            }else{
+                echo $email. ' is OK <i class="fas fa-check" style="color: green"></i>';
+                exit();
+            }
+        }
+    
+    }
+        ?>
+
+
+<?php
+@session_start();
+error_reporting(E_ALL);
+ini_set('display_errors','1');
+
+require_once'../config.php';
+
+
+if($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['storeemail']) && $_POST['storeemail'] !="") {
+    
+    $email = isset($_POST['storeemail']) ? $_POST['storeemail'] : false;
+
+     if($email == "") {
+         echo 'email empty!!';
+         exit();
+     }
+
+     if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            echo ' invalid email address, please verify your email address';
+            exit();
+        }else if(!preg_match("/^[a-z `A-Z0-9@.]*$/",$email) && strip_tags($email)) {
+             echo "invalid, email format not accepted, special characters not allowed <i class='fas fa-times' style='color: red'></i>";
+             exit();
+            
+         }else{
+            //check email
+            $con= new PDO("mysql:host=$serverhost;dbname=fundgcmf_primehealth;" , $serverusername, $serverpassword);
+            $query = $con->prepare("SELECT storeEmail FROM onboardlocations WHERE storeEmail=? LIMIT 1");
+            $e_Check = $query->bindParam(1, $email, PDO::PARAM_STR);
+            $e_Check = $query->execute();
+            if( $e_Check=$query->rowCount() > 0) {
+                echo  "store email already taken, please choose another <i class='fas fa-times' style='color: red'></i>";
                 exit();
             }else{
                 echo $email. ' is OK <i class="fas fa-check" style="color: green"></i>';

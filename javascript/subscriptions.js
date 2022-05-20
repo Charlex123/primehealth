@@ -2,6 +2,187 @@ function _(e) {
     return document.getElementById(e);
 }
 
+function _(e) {
+    return document.getElementById(e);
+}
+
+
+function passeeCheck() {
+    
+    $("#emailStatus").hide();
+    $("#phonenumberStatus").hide();
+    $("#usernameStatus").hide();
+    $("#passStatus").hide();
+    $("#passwordStatus").hide();
+    $("#passeeStatus").show();
+    $("#passeecheck").show();
+
+    var passid = document.getElementById("passeeStatus");
+    
+
+    var p = document.getElementById("userpassword").value;
+    if (p == '' || p == null) {
+    _('perr1').innerHTML = "<span style='color=red'><i class='fas fa-times'></i> Password cannot be empty</span>";
+    }else{
+    _('perr1').style.color = '#22a349';
+    _('perr1').innerHTML = "<span style='color=#22a349'><i class='fas fa-check-square'></i> Password cannot be empty</span>";
+    }
+    if (p.length <= 8 ) {
+    _('perr2').innerHTML = "<span style='color=red'><i class='fas fa-times'></i> Password must be at least 8 characters</span>";
+    }else {
+    _('perr2').style.color = '#22a349';
+    _('perr2').innerHTML = "<span style='color=#22a349'><i class='fas fa-check-square'></i> Password must be at least 8 characters</span>";
+    }
+    if (p.length > 30) {
+    _('perr4').innerHTML = "<span style='color=red'><i class='fas fa-times'></i> Password must be less than 30 characters</span>";
+    }
+    if (p.search(/[a-zA-Z]/i) < 0) {
+    _('perr5').innerHTML = "<span style='color=red'><i class='fas fa-times'></i> Password must contain both lower case and upper case letters.</span>"; 
+    }
+    else {
+    _('perr5').style.color = '#22a349';
+    _('perr5').innerHTML = "<span style='color=red'><span style='color=#22a349'><i class='fas fa-check-square'></i> Password must contain at least one lower case.</span>";
+    }
+    if (p.search(/[0-9]/i) < 0) {
+    _('perr6').innerHTML = "<i class='fas fa-times'></i> Password must contain at least one digit.</span>";
+    }else {
+    _('perr6').style.color = '#22a349';
+    _('perr6').innerHTML = "<span style='color=red'><span style='color=#22a349'><i class='fas fa-check-square'></i> Password must contain at least one digit.</span>";
+    }
+    if (p.search(/[!#$@^%&?'"]/i) < 0) {
+    _('perr7').innerHTML = "<span style='color=red'><i class='fas fa-times'></i> Password must contain at least one special character.</span>";
+    }else {
+    _('perr7').style.color = '#22a349';
+    _('perr7').innerHTML = "<span style='color=#22a349'><i class='fas fa-check-square'></i> Password must contain at least one special character.</span>";
+    }
+    
+
+}
+
+
+function usernameCheck() {
+    $("#emailStatus").hide();
+    $("#phonenumberStatus").hide();
+    $("#usernameStatus").show();
+    $("#passeeStatus").hide();
+    $("#passwordStatus").hide();
+
+    
+    var u = document.getElementById("username").value;
+    var status2 = document.getElementById("usernameStatus");
+    
+    
+    if(u) {
+
+        status2.style.color = '#22a349';  
+        status2.innerHTML = '....checking now';
+        var hr = new XMLHttpRequest();
+        hr.open("POST","validatesubscriptions.php",true);
+        hr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        hr.onreadystatechange = function () {
+            if((hr.readyState == 4) && (hr.status == 200 || hr.status == 304)) {
+                    status2.style.color = '#22a349';
+                    status2.innerHTML = hr.responseText;
+                    console.log(hr.response)
+                }
+        }
+        hr.send("username="+u);
+    }else {
+        status2.style.color = 'red';  
+        status2.innerHTML = 'PasswordRepeat cannot be empty';
+    }
+
+};  
+
+
+function passcheck() {
+    $("#emailStatus").hide();
+    $("#phonenumberStatus").hide();
+    $("#usernameStatus").hide();
+    $("#passeeStatus").hide();
+    $("#passwordStatus").show();
+
+    var status2 = document.getElementById("passwordStatus");
+    var approved = document.getElementById("passStatus");
+    
+    var p = document.getElementById("userpassword").value;
+    var p1 = document.getElementById("userconfirmpassword").value;
+    
+    
+    if(p !="" && p1 !="" && p != null && p1 != null) {
+
+        status2.style.color = '#22a349';  
+        status2.innerHTML = '....checking';
+        var hr = new XMLHttpRequest();
+        hr.open("POST","validatesubscriptions.php",true);
+        hr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        hr.onreadystatechange = function () {
+            if((hr.readyState == 4) && (hr.status == 200 || hr.status == 304)) {
+                    status2.style.color = '#22a349';
+                    status2.innerHTML = hr.responseText;
+                    
+                }
+        }
+        hr.send("password="+p+"&password1="+p1);
+    }else {
+        status2.style.color = 'red';  
+        status2.innerHTML = 'PasswordRepeat cannot be empty';
+    }
+
+};  
+
+
+function showPassword() {
+        var ddd = document.getElementById("regpassword");
+        var dddp = document.getElementById("regpassword1");
+        var hideP = document.getElementById("hideP");
+
+        if(ddd.getAttribute('type') == 'password') {
+            ddd.setAttribute("type",'varchar');
+            dddp.setAttribute("type",'varchar');
+            hideP.innerHTML = "<i class='fa fa-eye'></i>";
+        }else {
+            ddd.setAttribute("type",'password');
+            dddp.setAttribute("type",'password');
+            hideP.innerHTML = "<i class='fa fa-eye-slash'></i>";
+        }
+    
+    }
+    
+
+
+function regemailcheck() {
+    
+    $("#passwordStatus").hide();
+    $("#usernameStatus").hide();
+    $("#phonenumberStatus").hide();
+    $("#mainpassStatus").hide();
+
+    var status3 = document.getElementById("emailStatus");
+    status3.style.display = 'block';
+    var e = document.getElementById("useremail").value;
+    
+    if(e !="" ) {
+        status3.innerHTML = '....checking';
+        status3.style.color = '#22a349';
+        var hr = new XMLHttpRequest();
+        hr.open("POST","validatesubscriptions.php",true);
+        hr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        hr.onreadystatechange = function () {
+            if((hr.readyState == 4) && (hr.status == 200 || hr.status == 304) ) {
+                status3.style.color = '#22a349';
+                status3.innerHTML = hr.responseText;
+                
+            }
+        }
+        hr.send("Email="+e);
+    }else {
+        status3.style.color = 'red';
+        status3.innerHTML = 'email required!!';
+    }
+
+};
+
 function openModal(modalId) {
     modalid = document.getElementById(modalId)
     modalid.classList.remove('hidden')
