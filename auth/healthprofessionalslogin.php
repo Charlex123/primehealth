@@ -3,9 +3,6 @@ session_start();
 ini_set('display_errors','1');
 require_once('../config.php');
 
-// if(isset(session_id())) {
-    
-// }
 
 if( isset($_POST['email']) && isset($_POST['password'])){
     $email = isset($_POST['email']) ? $_POST['email'] : false;
@@ -13,12 +10,12 @@ if( isset($_POST['email']) && isset($_POST['password'])){
 
     if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $error = "invalid email address, please verify your email address";
-        header("location:https://my.fundreza.com/login");
+        header("location:login");
         exit();
     }
     if(!preg_match("/^[a-z `A-Z0-9@.]*$/",$email) && strip_tags($email)) {
         $error = "invalid, email format not accepted, special characters not allowed";
-        header("location:https://my.fundreza.com/login");
+        header("location:login");
         exit();
     }
 
@@ -34,17 +31,11 @@ if( isset($_POST['email']) && isset($_POST['password'])){
         
         if($login->execute()){
         $re = $login -> fetch(PDO::FETCH_ASSOC);
-        $userid = $re['id'];
-        if($login->rowCount() > 0 && $re['accountStatus'] == "Inactive") {
+        if($login->rowCount() == 0 ) {
             
-            $error = "Your account is inactive, we already sent you your activation code in your email ";
-            
-            }else if($login->rowCount() == 0 && $re['accountStatus'] == "Inactive"){
             $error = "You do not have account with us <a href='register' style='text-decoration;font-style:italic;color:#008;'>create account</a>";
             
-        }else if($login->rowCount() > 0 && $re['accountStatus'] == "Active" && $re['emailCode'] == 0 ) {
-           
-            if(password_verify($password, $re['password'])) {
+            }else if($login->rowCount() > 0 && password_verify($password, $re['password'])) {
                 
                 
                 $gd = $con->prepare("SELECT * FROM healthprofessionals WHERE id = ? ");
@@ -70,23 +61,16 @@ if( isset($_POST['email']) && isset($_POST['password'])){
                     exit();
                 }
                 
-                if($name !="" && isset($name)) {
-                    $_SESSION['user'];
-                    header("Location:https://localhost/primehealth/healthprofessionals/account/$name");
-                    exit();
-                }else {
-                    $_SESSION['user'];
-                    header("Location:https://account.fundreza.com/f/$name");
-                    exit();
-                }
-                var_dump($_SESSION['user']);
+                $_SESSION['user'];
+                // header("Location:https://primehealth.ng/healthprofessionals/account/$name");
+                header("Location:https://localhost/primehealth/healthprofessionals/account/$name");
+                $_SESSION['user'];
+                exit();
                 }else{
                 $error = "email and password does not match";
                 
             }
-        }else {
-            $error = "oops something happened, check your login details and try again";
-    }
+        
 
         }else {
             $error = "oops something happened, check your login details and try again";
@@ -152,7 +136,7 @@ if( isset($_POST['email']) && isset($_POST['password'])){
                             
                             <div>
                                 <label for="password" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Password</label>
-                                <input type="password" name="password" id="userpassword" placeholder="Enter your password" class="bg-gray-50 forma text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                                <input type="password" onmouseout="loginCheck()" name="password" id="userpassword" placeholder="Enter your password" class="bg-gray-50 forma text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
                             </div>
                             <button type="submit" name="submit" class="w-full text-white font-bold bg-success hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-success-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-success dark:focus:ring-success cursor-pointer">Login</button>
                             <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
@@ -177,29 +161,30 @@ if( isset($_POST['email']) && isset($_POST['password'])){
     }
     var error = document.getElementById("validation");
     var closeAlert = document.querySelector('.close-alert');
-    // function usernameCheck() {
-    //     var log = true;
-    //     var email = document.getElementById("useremail").value;
-    //     if(email) {
-    //         var hr = new XMLHttpRequest();
-    //         hr.open("POST","checklogin.php",true);
-    //         hr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-    //         hr.onreadystatechange = function () {
-    //             if((hr.readyState == 4) && (hr.status == 200 || hr.status == 304) ) {
-    //                 error.style.display = 'block';
-    //                 closeAlert.style.display = 'block';
-    //                 error.innerHTML = hr.responseText;
+    function emailCheck() {
+        var log = true;
+        var email = document.getElementById("email").value;
+        if(email) {
+            console.log(email)
+            var hr = new XMLHttpRequest();
+            hr.open("POST","hpchecklogin.php",true);
+            hr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            hr.onreadystatechange = function () {
+                if((hr.readyState == 4) && (hr.status == 200 || hr.status == 304) ) {
+                    error.style.display = 'block';
+                    closeAlert.style.display = 'block';
+                    error.innerHTML = hr.responseText;
               
-    //             }
-    //         }
-    //         hr.send("email="+email+"&log="+log);
-    //     }else {
-    //         error.style.display = 'block';
-    //         error.innerHTML = 'enter your email';
-    //         return false;
-    //     }
+                }
+            }
+            hr.send("email="+email+"&log="+log);
+        }else {
+            error.style.display = 'block';
+            error.innerHTML = 'enter your email';
+            return false;
+        }
 
-    // }
+    }
 
     function showPassword() {
         var ddd = document.getElementById("passworded");
@@ -227,11 +212,13 @@ if( isset($_POST['email']) && isset($_POST['password'])){
     function loginCheck() {
         
         var log = true;
-        var loginId = document.getElementById("email").value;
-        var pass = document.getElementById("passworded").value;
-        if(loginId != "" && loginId != null && pass != "" && pass != null) {
+        var error = document.getElementById("validation");
+        var closeAlert = document.querySelector('.close-alert');
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("userpassword").value;
+        if(email != "" && email != null && pass != "" && pass != null) {
             var hr = new XMLHttpRequest();
-            hr.open("POST","checklogin.php",true);
+            hr.open("POST","hpchecklogin.php",true);
             hr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
             hr.onreadystatechange = function () {
                 if((hr.readyState == 4) && (hr.status == 200 || hr.status == 304) ) {
@@ -240,7 +227,7 @@ if( isset($_POST['email']) && isset($_POST['password'])){
                     error.innerHTML = hr.responseText;
                 }
             }
-            hr.send("emailentity="+loginId+"&password="+pass);
+            hr.send("email="+email+"&password="+pass);
         }
         
     }

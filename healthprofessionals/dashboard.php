@@ -1,4 +1,5 @@
 <?php
+session_start();
 ob_start();
 // session_set_cookie_params(0, '/', 'primehealth');
 ini_set('display_errors','1');
@@ -10,14 +11,13 @@ require_once'../config.php';
 // include'sidebar.php';
 // @$_SESSION['currentpage'] = $_SERVER['REQUEST_URI'];
 // strip_tags(@$_SESSION['currentpage']);
-
 $user_data = @$_SESSION['user'];
 $userid = @$user_data['id'];
 $name = @$user_data['fname'];
 
 
 if(!isset($_SESSION['user'])) {
-    // header('Location:https://my.fundreza.com/login');
+    header('Location:https://primehealth.ng/auth/healthprofessionalslogin');
     // exit();
 }else {
     $user_data = @$_SESSION['user'];
@@ -527,7 +527,7 @@ if(!isset($_SESSION['user'])) {
                               </div>
 
                               <div>
-                                  <label for="brand" class="position-relative">Product Brand <span class="text-danger">*</span></label>
+                                  <label for="brand" class="position-relative">Product Brand (Optional)</label>
                                   <input type="text" name="brandname" id="brandname" class="bg-gray-50 forma text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter your valid email address" required>
                               </div>
 

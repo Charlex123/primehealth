@@ -2,7 +2,6 @@ function _(e) {
   return document.getElementById(e);
 }
 
-
 function openList(navid) {
     navList = document.getElementById(navid);
   
@@ -48,12 +47,14 @@ function openList(navid) {
             productusageinfo.classList.remove("d-block");
             productusageinfo.classList.add("d-none");
             medicaldevicesubCat.classList.add("d-none");
-        }else if(selectTag.value === 'Cream') {
+        }
+        
+        else if(selectTag.value === 'Cream') {
             druginfoDiv = document.getElementById("showdruginfo");
             drugsubCat = document.getElementById("drugsubcat");
             productusageinfo = document.getElementById("pusageinfo");
             creamsubCat = document.getElementById("creamsubcat");
-            supplementssubCat = document.getElementById("supplementsubcat");
+            supplementsubCat = document.getElementById("supplementsubcat");
             medicaldevicesubCat = document.getElementById("medicaldevicesubcat");
 
             druginfoDiv.classList.add("d-none");
@@ -64,12 +65,13 @@ function openList(navid) {
             productusageinfo.classList.add("d-block");
             productusageinfo.classList.remove("d-none");
         }
+        
         else if(selectTag.value === 'Supplements') {
             druginfoDiv = document.getElementById("showdruginfo");
             drugsubCat = document.getElementById("drugsubcat");
             productusageinfo = document.getElementById("pusageinfo");
             creamsubCat = document.getElementById("creamsubcat");
-            supplementssubCat = document.getElementById("supplementsubcat");
+            supplementsubCat = document.getElementById("supplementsubcat");
             medicaldevicesubCat = document.getElementById("medicaldevicesubcat");
 
             druginfoDiv.classList.add("d-none");
@@ -85,7 +87,7 @@ function openList(navid) {
             drugsubCat = document.getElementById("drugsubcat");
             productusageinfo = document.getElementById("pusageinfo");
             creamsubCat = document.getElementById("creamsubcat");
-            supplementssubCat = document.getElementById("supplementsubcat");
+            supplementsubCat = document.getElementById("supplementsubcat");
             medicaldevicesubCat = document.getElementById("medicaldevicesubcat");
 
             druginfoDiv.classList.add("d-none");
@@ -134,9 +136,12 @@ function openList(navid) {
       // var v6 = _("variant6").value;
       // var v7 = _("variant7").value;
       var ss = _("stockstatus").value;
+      console.log(spd)
+      console.log(ss)
+      console.log(pn)
       
       if(sto != "" && pn != "" &&  pc != "" && aq != "" && spd != "" && fpd !="") {
-         
+         console.log(fpd)
           var hr = new XMLHttpRequest();
           hr.open("POST","addproduct.php",true);
           hr.setRequestHeader("Content-type","application/x-www-form-urlencoded");

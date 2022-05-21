@@ -20,7 +20,7 @@ session_start();
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Register | Login Page</title>
     <link rel="stylesheet" href="register.css" />
-    <script src="../javascript/subscriptions.js"></script>
+    <script src="javascript/subscriptions.js"></script>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 	<script lang="javascript" type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
 	<!--<link rel="stylesheet" href="css/style.css">-->
@@ -41,6 +41,9 @@ session_start();
             display: none;
             font-size: 12px;
             color: red;
+        }
+        #emailStatus, #allpasswordStatus, #usernameStatus {
+            margin: 1rem auto;text-align: center;font-size: 12px;
         }
     </style>
 </head>
@@ -186,7 +189,7 @@ session_start();
                                 <div id="perr6"></div>
                                 <div id="perr7"></div>
                             </div>
-                            <input name="submit" class="w-full text-white bg-success hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-success-300 font-medium rounded-lg text-sm font-bold px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-success dark:focus:ring-success cursor-pointer" value="Sign Up Now" onclick="registerUsers()">
+                            <input name="submit" class="w-full text-white bg-success hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-success-300 font-medium rounded-lg text-sm font-bold px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-success dark:focus:ring-success cursor-pointer" value="Sign Up Now" onclick="registerUsers()">
                             <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
                                 Already registered? <a href="login" class="text-success-700 hover:underline dark:text-success-500">Login</a>
                             </div>
@@ -272,7 +275,7 @@ session_start();
                     status2.style.color = '#22a349';  
                     status2.innerHTML = '....checking now';
                     var hr = new XMLHttpRequest();
-                    hr.open("POST","http://localhost/primehealth/auth/check.php",true);
+                    hr.open("POST","checkreg.php",true);
                     hr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
                     hr.onreadystatechange = function () {
                         if((hr.readyState == 4) && (hr.status == 200 || hr.status == 304)) {
@@ -309,7 +312,7 @@ session_start();
                     status2.style.color = '#22a349';  
                     status2.innerHTML = '....checking';
                     var hr = new XMLHttpRequest();
-                    hr.open("POST","check.php",true);
+                    hr.open("POST","checkreg.php",true);
                     hr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
                     hr.onreadystatechange = function () {
                         if((hr.readyState == 4) && (hr.status == 200 || hr.status == 304)) {
@@ -361,7 +364,7 @@ session_start();
                     status3.innerHTML = '....checking';
                     status3.style.color = '#22a349';
                     var hr = new XMLHttpRequest();
-                    hr.open("POST","check.php",true);
+                    hr.open("POST","checkreg.php",true);
                     hr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
                     hr.onreadystatechange = function () {
                         if((hr.readyState == 4) && (hr.status == 200 || hr.status == 304) ) {
